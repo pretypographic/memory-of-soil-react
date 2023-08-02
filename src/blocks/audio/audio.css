@@ -1,0 +1,9 @@
+.audio {
+    width: 95%;
+    height: 2vw;
+    margin: 1vh;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1vh solid white;
+    border-radius: 2px;
+}

@@ -1,0 +1,6 @@
+.popup__video {
+    background-color: black;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+}

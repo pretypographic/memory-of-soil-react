@@ -1,0 +1,7 @@
+.heading {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

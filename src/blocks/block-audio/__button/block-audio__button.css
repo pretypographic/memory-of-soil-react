@@ -1,0 +1,17 @@
+.block-audio__button {
+    width: 5vh;
+    height: 5vh;
+    padding: 0;
+    background-color: var(--yellow);
+    background-image: url(../../../images/__button.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    top: -1.75vh;
+    left: 2vh;
+    cursor: pointer;
+    opacity: 0;
+}

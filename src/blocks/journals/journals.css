@@ -1,0 +1,11 @@
+.journals {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 10;
+    transition: flex-shrink 0.4s;
+}

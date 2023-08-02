@@ -1,0 +1,4 @@
+.blackout_seen {
+  z-index: 3;
+  opacity: 1;
+}

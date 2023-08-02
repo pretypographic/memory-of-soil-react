@@ -1,0 +1,15 @@
+.footer__link {
+    margin: 0 0 0 0.4em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 3em;
+    letter-spacing: 0.4em;
+    color: #fff;
+    opacity: 0.3;
+    transition: opacity 0.4s;
+}
+
+.footer__link:hover {
+    opacity: 1;
+}
