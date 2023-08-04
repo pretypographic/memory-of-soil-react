@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { RingContext } from '../contexts/RingContext';
 
-function Footer() {
+function About() {
   const clickedRing = useContext(RingContext);
 
   return (
@@ -81,4 +81,4 @@ function Footer() {
   )
 }
 
-export { Footer }
+export { About }

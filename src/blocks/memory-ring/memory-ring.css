@@ -18,11 +18,11 @@
 }
 
 @keyframes shine {
-  0% {
+  0%, 100% {
     opacity: 0;
   }
 
-  100% {
+  50% {
     opacity: 0.9;
   }
 }

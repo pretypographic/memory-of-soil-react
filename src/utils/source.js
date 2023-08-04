@@ -3,6 +3,77 @@ import IMG_2232 from '../media/images/frame-memory/IMG_2232.JPG';
 import IMG_2125 from '../media/images/frame-memory/IMG_2125.JPG';
 import IMG_2231 from '../media/images/frame-memory/IMG_2231.JPG';
 import IMG_2173 from '../media/images/frame-memory/IMG_2173.JPG';
+import bloodstone_v2 from '../media/videos/frame-memory/bloodstone_v2.mp4';
+import poster03_blood_stone_v2 from '../media/videos/frame-memory/poster03_blood_stone_v2.jpg';
+import тихий_стрекот from "../media/audio/frame-memory/14.тихий стрекот.mp3";
+// memory
+import IMG_2082 from '../media/images/frame-illusion/IMG_2082.JPG';
+import IMG_2087 from '../media/images/frame-illusion/IMG_2087.JPG';
+import IMG_2162 from '../media/images/frame-illusion/IMG_2162.JPG';
+import IMG_2192 from '../media/images/frame-illusion/IMG_2192.JPG';
+import IMG_5652 from '../media/images/frame-illusion/IMG_5652.JPG';
+import IMG_6998 from '../media/images/frame-illusion/IMG_6998.JPG';
+import IMG_7023 from '../media/images/frame-illusion/IMG_7023.JPG';
+import flower_2 from '../media/videos/frame-illusion/flower 2.mp4';
+import poster_flower2 from '../media/videos/frame-illusion/poster_flower2.jpg';
+import ветер from "../media/audio/frame-illusion/12.ветер.mp3";
+import ZOOM0049_LR from "../media/audio/frame-illusion/ZOOM0049_LR.wav";
+import ZOOM0050_LR from "../media/audio/frame-illusion/ZOOM0050_LR.wav";
+// illusion
+import IMG_2221 from '../media/images/frame-revelations/IMG_2221.JPG';
+import IMG_2225 from '../media/images/frame-revelations/IMG_2225.JPG';
+import IMG_6095 from '../media/images/frame-revelations/IMG_6095.JPG';
+import стрекот_цикад_1 from "../media/audio/frame-revelations/7.стрекот цикад.mp3";
+import птицы from "../media/audio/frame-revelations/19.птицы.mp3";
+// revelations
+import IMG_2089 from '../media/images/frame-monument/IMG_2089_animation.JPG';
+import IMG_2106 from '../media/images/frame-monument/IMG_2106.JPG';
+import IMG_2126 from '../media/images/frame-monument/IMG_2126.JPG';
+import IMG_2144 from '../media/images/frame-monument/IMG_2144.JPG';
+import колокола from "../media/audio/frame-monument/1.колокола.mp3";
+import стрекот_цикад_2 from "../media/audio/frame-monument/13.стрекот цикад.mp3";
+// monument
+import IMG_2108 from '../media/images/frame-war/IMG_2108.JPG';
+import IMG_2127 from '../media/images/frame-war/IMG_2127.JPG';
+import IMG_2130 from '../media/images/frame-war/IMG_2130.JPG';
+import стрекот_цикад_3 from "../media/audio/frame-war/9.стрекот цикад.mp3";
+// war
+import IMG_2115 from '../media/images/frame-person/IMG_2115.JPG';
+import IMG_2123 from '../media/images/frame-person/IMG_2123.JPG';
+import IMG_2132 from '../media/images/frame-person/IMG_2132.JPG';
+import Polina_1 from '../media/videos/frame-person/Polina_1.mp4';
+import poster_Polina_1 from '../media/videos/frame-person/poster_Polina_1.jpg';
+import стук_по_меди_статуй from "../media/audio/frame-person/3.стук по меди статуй.mp3";
+import вода_и_птички from "../media/audio/frame-person/22.вода и птички.mp3";
+// person
+import IMG_2172 from '../media/images/frame-conflict/IMG_2172.JPG';
+import IMG_2175 from '../media/images/frame-conflict/IMG_2175.JPG';
+import IMG_2177 from '../media/images/frame-conflict/IMG_2177.JPG';
+import IMG_2180 from '../media/images/frame-conflict/IMG_2180.JPG';
+import fist_v2 from '../media/videos/frame-conflict/fist_v2.mp4';
+import poster_fist_v2 from '../media/videos/frame-conflict/poster_fist_v2.jpg';
+import стрекот_цикад_4 from '../media/audio/frame-conflict/5.стрекот цикад.mp3';
+import ветер_и_мухи from '../media/audio/frame-conflict/11.ветер и мухи.mp3';
+// conflict
+import dancing_stone from '../media/videos/frame-movement/dancing_stone.mp4';
+import poster_dancing_stone from '../media/videos/frame-movement/poster_dancing_stone.jpg';
+import DSCF0823_30sec from '../media/videos/frame-movement/DSCF0823_30sec.mp4';
+import poster_DSCF0823_30sec from '../media/videos/frame-movement/poster_DSCF0823_30sec.jpg';
+import MVI_5637 from '../media/videos/frame-movement/MVI_5637.MOV';
+import poster_MVI_5637 from '../media/videos/frame-movement/poster_MVI_5637.jpg';
+import Polina_2v2 from '../media/videos/frame-movement/Polina_2v2.mp4';
+import poster_Polina_2v2 from '../media/videos/frame-movement/poster_Polina_2v2.jpg';
+import журчание_воды from "../media/audio/frame-movement/16.журчание воды.mp3";
+import речка_бежит_1 from "../media/audio/frame-movement/23.речка бежит.mp3";
+import речка_бежит_2 from "../media/audio/frame-movement/25.речка бежит.mp3";
+// movement
+import IMG_6848 from '../media/images/frame-time/IMG_6848.JPG';
+import fog from '../media/videos/frame-time/fog.mp4';
+import poster_fog from '../media/videos/frame-time/poster_fog.jpg';
+import timelapse from '../media/videos/frame-time/timelapse.mp4';
+import poster_timelapse from '../media/videos/frame-time/poster_timelapse.jpg';
+import стрекот_цикад_5 from "../media/audio/frame-time/6.стрекот цикад.mp3";
+// time
 
 const source = {
   memory: {
@@ -11,12 +82,12 @@ const source = {
       { backgroundImage: `URL(${IMG_2232})` },
       { backgroundImage: `URL(${IMG_2125})` },
       { backgroundImage: `URL(${IMG_2231})` },
-      { backgroundImage: `URL(${IMG_2173})` }
+      { backgroundImage: `URL(${IMG_2173})` },
     ],
     video: [
       {
-        video: "../media/videos/frame-memory/bloodstone_v2.mp4",
-        image: 'url(../media/videos/frame-memory/poster03_blood_stone_v2.jpg)',
+        video: bloodstone_v2,
+        image: { backgroundImage: `URL(${poster03_blood_stone_v2})` },
         format: 'popup__video_type_a'
       }
     ],
@@ -36,23 +107,23 @@ const source = {
       format: 'journals_type_a'
     },
     audioArrey: [
-      "../media/audio/frame-memory/14.тихий стрекот.mp3"
+      тихий_стрекот,
     ]
   },
   illusion: {
     images: [
-      'url(../media/images/frame-illusion/IMG_2082.JPG',
-      'url(../media/images/frame-illusion/IMG_2087.JPG',
-      'url(../media/images/frame-illusion/IMG_2162.JPG',
-      'url(../media/images/frame-illusion/IMG_2192.JPG',
-      'url(../media/images/frame-illusion/IMG_5652.JPG',
-      'url(../media/images/frame-illusion/IMG_6998.JPG',
-      'url(../media/images/frame-illusion/IMG_7023.JPG'
+      { backgroundImage: `URL(${IMG_2082})` },
+      { backgroundImage: `URL(${IMG_2087})` },
+      { backgroundImage: `URL(${IMG_2162})` },
+      { backgroundImage: `URL(${IMG_2192})` },
+      { backgroundImage: `URL(${IMG_5652})` },
+      { backgroundImage: `URL(${IMG_6998})` },
+      { backgroundImage: `URL(${IMG_7023})` },
     ],
     video: [
       {
-        video: "../media/videos/frame-illusion/flower 2.mp4",
-        image: 'url(../media/videos/frame-illusion/poster_flower2.jpg)',
+        video: flower_2,
+        image: { backgroundImage: `URL(${poster_flower2})` },
         format: 'popup__video_type_b'
       }
     ],
@@ -67,24 +138,18 @@ const source = {
       format: 'journals_type_b'
     },
     audioArrey: [
-      "../media/audio/frame-illusion/12.ветер.mp3",
-      "../media/audio/frame-illusion/ZOOM0049_LR.wav",
-      "../media/audio/frame-illusion/ZOOM0050_LR.wav"
+      ветер,
+      ZOOM0049_LR,
+      ZOOM0050_LR,
     ]
   },
   revelations: {
     images: [
-      'url(../media/images/frame-revelations/IMG_2221.JPG',
-      'url(../media/images/frame-revelations/IMG_2225.JPG',
-      'url(../media/images/frame-revelations/IMG_6095.JPG'
+      { backgroundImage: `URL(${IMG_2221})` },
+      { backgroundImage: `URL(${IMG_2225})` },
+      { backgroundImage: `URL(${IMG_6095})` },
     ],
-    video: [
-      {
-        video: "./",
-        image: 'url(./)',
-        format: 'popup__video_type_a'
-      }
-    ],
+    video: [],
     texts: {
       rus: [
         `Я трусиха. Я бесконечно люблю природу, ценю ее, пытаюсь постоянно осознавать, что я ее часть, но оставшись с ней наедине, я робею. Мне становится страшно как только приходит темнота, я боюсь хищников, я боюcь насекомых. В связке с этим, я осознала, насколько природа мощная и самостоятельная. Насколько она подвижная и адаптивная. Природа - не незабытая жертва, а забытый участник. Природа - не фон для человеческих передряг, а среда, обстоятельства и последствия.`,
@@ -101,24 +166,18 @@ const source = {
       format: 'journals_type_c'
     },
     audioArrey: [
-      "../media/audio/frame-revelations/7.стрекот цикад.mp3",
-      "../media/audio/frame-revelations/19.птицы.mp3"
+      стрекот_цикад_1,
+      птицы,
     ]
   },
   monument: {
     images: [
-      'url(../media/images/frame-monument/IMG_2089_animation.JPG',
-      'url(../media/images/frame-monument/IMG_2106.JPG',
-      'url(../media/images/frame-monument/IMG_2126.JPG',
-      'url(../media/images/frame-monument/IMG_2144.JPG'
+      { backgroundImage: `URL(${IMG_2089})` },
+      { backgroundImage: `URL(${IMG_2106})` },
+      { backgroundImage: `URL(${IMG_2126})` },
+      { backgroundImage: `URL(${IMG_2144})` },
     ],
-    video: [
-      {
-        video: "./",
-        image: 'url(./)',
-        format: 'popup__video_type_a'
-      }
-    ],
+    video: false,
     texts: {
       rus: [
         `Очень жарко, горячий бетон. Сверчки. Мухи Первое видимое живое существо - ящерица, а из травы доносится рокот насекомых множество полевых цветов.
@@ -135,23 +194,17 @@ const source = {
       format: 'journals_type_a'
     },
     audioArrey: [
-      "../media/audio/frame-monument/1.колокола.mp3",
-      "../media/audio/frame-monument/13.стрекот цикад.mp3"
+      колокола,
+      стрекот_цикад_2,
     ]
   },
   war: {
     images: [
-      'url(../media/images/frame-war/IMG_2108.JPG)',
-      'url(../media/images/frame-war/IMG_2127.JPG)',
-      'url(../media/images/frame-war/IMG_2130.JPG)'
+      { backgroundImage: `URL(${IMG_2108})` },
+      { backgroundImage: `URL(${IMG_2127})` },
+      { backgroundImage: `URL(${IMG_2130})` },
     ],
-    video: [
-      {
-        video: "./",
-        image: 'url(./)',
-        format: 'popup__video_type_a'
-      }
-    ],
+    video: false,
     texts: {
       rus: [
         `павшие воины становятся удобрением для почвы`,
@@ -164,19 +217,19 @@ const source = {
       format: 'journals_type_a'
     },
     audioArrey: [
-      "../media/audio/frame-war/9.стрекот цикад.mp3"
+      стрекот_цикад_3
     ]
   },
   person: {
     images: [
-      'url(../media/images/frame-person/IMG_2115.JPG',
-      'url(../media/images/frame-person/IMG_2123.JPG',
-      'url(../media/images/frame-person/IMG_2132.JPG'
+      { backgroundImage: `URL(${IMG_2115})` },
+      { backgroundImage: `URL(${IMG_2123})` },
+      { backgroundImage: `URL(${IMG_2132})` },
     ],
     video: [
       {
-        video: "../media/videos/frame-person/Polina_1.mp4",
-        image: 'url(../media/videos/frame-person/poster_Polina_1.jpg)',
+        video: Polina_1,
+        image: { backgroundImage: `URL(${poster_Polina_1})` },
         format: 'popup__video_type_c'
       }
     ],
@@ -192,20 +245,21 @@ const source = {
       format: 'journals_type_a'
     },
     audioArrey: [
-      "../media/audio/frame-person/3.стук по меди статуй.mp3",
-      "../media/audio/frame-person/22.вода и птички.mp3"
+      стук_по_меди_статуй,
+      вода_и_птички,
     ]
   },
   conflict: {
     images: [
-      'url(../media/images/frame-conflict/IMG_2172.JPG)',
-      'url(../media/images/frame-conflict/IMG_2175.JPG)',
-      'url(../media/images/frame-conflict/IMG_2177.JPG)',
-      'url(../media/images/frame-conflict/IMG_2180.JPG)'],
+      { backgroundImage: `URL(${IMG_2172})` },
+      { backgroundImage: `URL(${IMG_2175})` },
+      { backgroundImage: `URL(${IMG_2177})` },
+      { backgroundImage: `URL(${IMG_2180})` },
+    ],
     video: [
       {
-        video: '../media/videos/frame-conflict/fist_v2.mp4',
-        image: 'url(../media/videos/frame-conflict/poster_fist_v2.jpg)',
+        video: fist_v2,
+        image: { backgroundImage: `URL(${poster_fist_v2})` },
         format: 'popup__video_type_a'
       }
     ],
@@ -225,30 +279,28 @@ const source = {
       format: 'journals_type_a'
     },
     audioArrey: [
-      '../media/audio/frame-conflict/5.стрекот цикад.mp3',
-      '../media/audio/frame-conflict/11.ветер и мухи.mp3'
+      стрекот_цикад_4,
+      ветер_и_мухи,
     ]
   },
   movement: {
-    images: [
-      'url(./'
-    ],
+    images: [],
     video: [
       {
-        video: "../media/videos/frame-movement/dancing_stone.mp4",
-        image: 'url(../media/videos/frame-movement/poster_dancing_stone.jpg)',
+        video: dancing_stone,
+        image: { backgroundImage: `URL(${poster_dancing_stone})` },
         format: 'popup__video_type_a'
       }, {
-        video: "../media/videos/frame-movement/DSCF0823_30sec.mp4",
-        image: 'url(../media/videos/frame-movement/poster_DSCF0823_30sec.jpg)',
+        video: DSCF0823_30sec,
+        image: { backgroundImage: `URL(${poster_DSCF0823_30sec})` },
         format: 'popup__video_type_a'
       }, {
-        video: "../media/videos/frame-movement/MVI_5637.MOV",
-        image: 'url(../media/videos/frame-movement/poster_MVI_5637.jpg)',
+        video: MVI_5637,
+        image: { backgroundImage: `URL(${poster_MVI_5637})` },
         format: 'popup__video_type_c'
       }, {
-        video: "../media/videos/frame-movement/Polina_2v2.mp4",
-        image: 'url(../media/videos/frame-movement/poster_Polina_2v2.jpg)',
+        video: Polina_2v2,
+        image: { backgroundImage: `URL(${poster_Polina_2v2})` },
         format: 'popup__video_type_c'
       }
     ],
@@ -264,23 +316,23 @@ const source = {
       format: 'journals_type_a'
     },
     audioArrey: [
-      "../media/audio/frame-movement/16.журчание воды.mp3",
-      "../media/audio/frame-movement/23.речка бежит.mp3",
-      "../media/audio/frame-movement/25.речка бежит.mp3"
+      журчание_воды,
+      речка_бежит_1,
+      речка_бежит_2,
     ]
   },
   time: {
     images: [
-      'url(../media/images/frame-time/IMG_6848.JPG'
+      { backgroundImage: `URL(${IMG_6848})` },
     ],
     video: [
       {
-        video: "../media/videos/frame-time/fog.mp4",
-        image: 'url(../media/videos/frame-time/poster_fog.jpg)',
+        video: fog,
+        image: { backgroundImage: `URL(${poster_fog})` },
         format: 'popup__video_type_b'
       }, {
-        video: "../media/videos/frame-time/timelapse.mp4",
-        image: 'url(../media/videos/frame-time/poster_timelapse.jpg)',
+        video: timelapse,
+        image: { backgroundImage: `URL(${poster_timelapse})` },
         format: 'popup__video_type_c'
       }
     ],
@@ -295,7 +347,7 @@ const source = {
       format: 'journals_type_a'
     },
     audioArrey: [
-      "../media/audio/frame-time/6.стрекот цикад.mp3"
+      стрекот_цикад_5
     ]
   }
 };

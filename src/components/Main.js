@@ -1,16 +1,16 @@
 import { useContext, useState, useEffect } from 'react';
 import { RingContext } from '../contexts/RingContext';
-
+import { Language } from './Language';
 import { Button } from './Button';
 import { MemoryRing } from './MemoryRing';
 import { MemoryWave } from './MemoryWave';
-import { Footer } from './Footer';
-
+import { About } from './About';
 import { images } from '../utils/images';
+import { Plug } from './Plug';
 
-function Main({ setContext, animation }) {
-  const clickedRing = useContext(RingContext);
-  const [wawesStyle, setWawesStyle] = useState(Array.from({ length: 15 }, () => ({ animation: '' })));
+function Main({ generateAnimationStyles, clearAnimationStyles }) {
+  const { ringContext, setRingContext } = useContext(RingContext);
+  const [wawesStyle, setWawesStyle] = useState(Array.from({ length: 15 }, () => ({})));
 
   const ringsStyle = {
     memory: {
@@ -58,77 +58,80 @@ function Main({ setContext, animation }) {
       height: '15vh',
       top: '42vh'
     },
-  }
+  };
 
   function clearMemory() {
-    const updatedWawesStyle = wawesStyle.map((wave, index) => {
-      const updatedAnimation = 'none';
-      return { ...wave, animation: updatedAnimation };
-    });
+    const updatedWawesStyle = wawesStyle.map(wave => clearAnimationStyles(wave));
     setWawesStyle(updatedWawesStyle);
-  }
+  };
 
   function blastMemory() {
     let step = 0;
-    const updatedWawesStyle = wawesStyle.map((wave, index) => {
-      const updatedAnimation = animation(0.5, 0.1, step, 2, 'backwards');
+    const updatedWawesStyle = wawesStyle.map((wave) => {
+      const updatedAnimation = generateAnimationStyles(1, 0.1, step, 1, 'backwards');
       step += 0.05;
-      return { ...wave, animation: updatedAnimation };
+      return { ...wave, ...updatedAnimation };
     });
     setWawesStyle(updatedWawesStyle);
-  }
+  };
 
   function shineMemory(ri) {
-    if (!clickedRing) {
+    if (!ringContext) {
       let step = 0.1;
       const updatedWawesStyle = wawesStyle.map((wawe, i) => {
         if (i === ri) {
-          const updatedAnimation = animation(1, 0, 0, 'infinite', 'forwards');
-          return { ...wawe, animation: updatedAnimation };
+          const updatedAnimation = generateAnimationStyles(2, 0, 0, 'infinite', 'forwards');
+          return { ...wawe, ...updatedAnimation };
         } else if (i > ri) {
-          const updatedAnimation = animation(1, 0, step, 'infinite', 'forwards');
+          const updatedAnimation = generateAnimationStyles(2, 0, step, 'infinite', 'forwards');
           step += 0.1;
-          return { ...wawe, animation: updatedAnimation };
+          return { ...wawe, ...updatedAnimation };
         } else {
-          return wawe;
+          const updatedAnimation = clearAnimationStyles({ ...wawe });
+          return { ...wawe, ...updatedAnimation };
         }
       });
       setWawesStyle(updatedWawesStyle);
-    }
-  }
+    };
+  };
 
   function collapseMemory() {
-    setContext(true);
-    let step = 0;
-    const updatedWawesStyle = wawesStyle.map((wave, index) => {
-      const updatedAnimation = animation(0.5, 0.1, step, 2, 'backwards');
-      step += 0.1;
-      return { ...wave, animation: updatedAnimation };
-    });
-    setWawesStyle(updatedWawesStyle);
-  }
+    console.log('collapseMemory');
+    if (!ringContext) {
+      console.log(ringContext);
+      let step = 0;
+      const updatedWawesStyle = wawesStyle.map((wave) => {
+        const updatedAnimation = generateAnimationStyles(1, 0.1, step, 1, 'backwards');
+        step += 0.1;
+        return { ...wave, ...updatedAnimation };
+      });
+      setWawesStyle(updatedWawesStyle);
+    };
+    setRingContext(true);
+    console.log(ringContext);
+  };
 
   function handleMouseTouchesRing(event, name) {
     if (event.currentTarget.getAttribute('data-name') === name) {
       const index = parseInt(event.currentTarget.getAttribute('data-index'), 10);
       shineMemory(index);
-    }
-  }
+    };
+  };
 
-  function handleSelfPossession(event, name) {
+  function handleSelfPossession() {
     clearMemory();
-  }
+  };
 
   useEffect(() => {
     blastMemory();
-    setTimeout(() => { clearMemory() }, 3000);
+    setTimeout(() => {setRingContext(false)}, 3000)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, []);
 
   return (
-    <main className='memory-rings' >
+    <div className='memory-rings' >
+      <Language />
       <Button />
-
       <MemoryRing
         link='/memory'
         name='memory'
@@ -138,8 +141,7 @@ function Main({ setContext, animation }) {
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
         images={images.rings.memory}
-        ri={8}
-      />
+        ri={8} />
       <MemoryRing
         link='/illusion'
         name='illusion'
@@ -149,8 +151,7 @@ function Main({ setContext, animation }) {
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
         images={images.rings.illusion}
-        ri={7}
-      />
+        ri={7} />
       <MemoryRing
         link='/revelations'
         name='revelations'
@@ -160,8 +161,7 @@ function Main({ setContext, animation }) {
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
         images={images.rings.revelations}
-        ri={6}
-      />
+        ri={6} />
       <MemoryRing
         link='/monument'
         name='monument'
@@ -171,8 +171,7 @@ function Main({ setContext, animation }) {
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
         images={images.rings.monument}
-        ri={5}
-      />
+        ri={5} />
       <MemoryRing
         link='/war'
         name='war'
@@ -182,8 +181,7 @@ function Main({ setContext, animation }) {
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
         images={images.rings.war}
-        ri={4}
-      />
+        ri={4} />
       <MemoryRing
         link='/person'
         name='person'
@@ -193,8 +191,7 @@ function Main({ setContext, animation }) {
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
         images={images.rings.person}
-        ri={3}
-      />
+        ri={3} />
       <MemoryRing
         link='/conflict'
         name='conflict'
@@ -204,8 +201,7 @@ function Main({ setContext, animation }) {
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
         images={images.rings.conflict}
-        ri={2}
-      />
+        ri={2} />
       <MemoryRing
         link='/movement'
         name='movement'
@@ -215,8 +211,7 @@ function Main({ setContext, animation }) {
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
         images={images.rings.movement}
-        ri={1}
-      />
+        ri={1} />
       <MemoryRing
         link='/time'
         name='time'
@@ -226,13 +221,11 @@ function Main({ setContext, animation }) {
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
         images={images.rings.time}
-        ri={0}
-      />
-
+        ri={0} />
       <MemoryWave wawesStyle={wawesStyle} />
-
-      <Footer />
-    </main>
+      <About />
+      <Plug />
+    </div>
   )
 };
 

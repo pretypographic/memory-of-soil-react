@@ -1,45 +1,58 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { RingContext } from '../contexts/RingContext';
+import { LanguageContext } from '../contexts/LanguageContext';
 
-import { Header } from './Header';
 import { Main } from './Main';
 import { Frame } from './Frame';
-import { Plug } from './Plug';
 
 import { source } from '../utils/source';
 
 function App() {
-  const [clickedState, setClickedState] = useState(false);
+  const [ringContext, setRingContext] = useState(true);
+  const [languageContext, setLanguageContext] = useState('rus');
 
-  function setContext() {
-    setClickedState(!clickedState);
-  }
-
-  function animation(t, delay, step, iterations, key) {
-    const animationType = `shine ${t}s ${delay + step}s ease-in ${iterations} alternate ${key}`;
-    return animationType;
+  function generateAnimationStyles(t, delay, step, iterations, key) {
+    return {
+      animationName: 'shine',
+      animationDuration: `${t}s`,
+      animationDelay: `${delay + step}s`,
+      animationTimingFunction: 'ease-in',
+      animationIterationCount: iterations,
+      animationDirection: 'alternate',
+      animationFillMode: 'both',
+      animationKeyframes: key,
+    };
   };
 
+  function clearAnimationStyles() {
+    return {
+      animationName: '',
+      animationDuration: '',
+      animationDelay: '',
+      animationTimingFunction: '',
+      animationIterationCount: '',
+      animationDirection: '',
+      animationFillMode: '',
+      animationKeyframes: '',
+    };
+  }
+
   return (
-    <RingContext.Provider value={clickedState}>
-      <div className='memories-echo'>
-        <Header />
-
-        <Routes>
-          <Route path='/' exact element={
-            <Main
-              setContext={setContext}
-              animation={animation} />
-          } />
-          <Route path='/:subject' element={
-            <Frame setContext={setContext} source={source} />
-          } />
-        </Routes>
-
-        <Plug />
-      </div>
-    </RingContext.Provider>
+    <LanguageContext.Provider value={{ languageContext, setLanguageContext }}>
+      <RingContext.Provider value={{ ringContext, setRingContext }}>
+        <div className='memories-echo'>
+          <Routes>
+            <Route path='/' exact element={
+              <Main
+                generateAnimationStyles={generateAnimationStyles}
+                clearAnimationStyles={clearAnimationStyles} />} />
+            <Route path='/:subject' element={
+              <Frame source={source} />} />
+          </Routes>
+        </div>
+      </RingContext.Provider>
+    </LanguageContext.Provider>
   );
 }
 
