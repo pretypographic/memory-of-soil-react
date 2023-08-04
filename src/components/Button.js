@@ -1,11 +1,24 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { RingContext } from '../contexts/RingContext';
 
-function Button() {
-  const clickedRing = useContext(RingContext);
+function Button({ about, learnMoreAbout, closeAbout }) {
+  const { ringContext } = useContext(RingContext);
+  const [text, setText] = useState('о проекте')
+
+  function handleMouseDawn() {
+    if (!about && !ringContext) {
+      setText('кольца');
+      learnMoreAbout();
+    } else if (about && ringContext) {
+      setText('о проекте');
+      closeAbout();
+    }
+  }
 
   return (
-    <p className={`memory-source ${clickedRing && 'disabled'}`}>о проекте</p>
+    <button
+      className='memory-source'
+      onMouseDown={handleMouseDawn}>{text}</button>
   )
 }
 

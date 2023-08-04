@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 
+import { useEffect } from 'react';
 import { images } from '../utils/images';
 
 function MemoryWave({ wawesStyle }) {
+  useEffect(() => {
+  }, [wawesStyle])
   return (
     <div className='memory-wave'>
       <img

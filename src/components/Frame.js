@@ -5,7 +5,7 @@ import { Language } from './Language';
 import { Visual } from './Visual';
 import { Popup } from './Popup';
 
-function Frame({ source }) {
+function Frame({ source, handleBlackout }) {
   let { subject } = useParams();
   let frameSource = source[subject];
   const [isFocused, setIsFocused] = useState(false);
@@ -20,6 +20,22 @@ function Frame({ source }) {
     setFocus(object);
     setIsFocused(true);
   };
+
+  useEffect(() => {
+    handleBlackout(false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (!isFocused) {
+      setFocus({
+        image: false,
+        video: false,
+        format: false,
+        text: false,
+      });
+    }
+  }, [isFocused]);
 
   useEffect(() => {
     if (!isFocused) {

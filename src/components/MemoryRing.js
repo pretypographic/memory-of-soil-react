@@ -9,12 +9,12 @@ function MemoryRing({ link, name, style, wawesStyle, handlePressRing, handleMous
 
   function handlePressing(event) {
     event.stopPropagation();
+    handlePressRing();
     if (!ringContext) {
       setTimeout(() => {
         navigate(link, { replace: true });
       }, 3000);
     };
-    handlePressRing();
   };
 
   function handleMouseTouch(event) {
@@ -29,15 +29,16 @@ function MemoryRing({ link, name, style, wawesStyle, handlePressRing, handleMous
 
   return (
     <div
-      className='memory-ring'
+      className={`memory-ring ${!ringContext && 'memory-ring_pointer'}`}
       data-name={name}
       data-index={ri}
       style={style}
-      onClick={handlePressing}
+      onMouseDown={handleMouseOff}
+      onMouseUp={handlePressing}
       onMouseOver={handleMouseTouch}
       onMouseOut={handleMouseOff}>
-      <img className={`memory-ring__lit ${(ringContext) && 'disabled'}`} src={images.lit} />
-      <img className={`memory-ring__title ${(ringContext) && 'disabled'}`} src={images.title} />
+      <img className={`memory-ring__lit ${ringContext && 'disabled'}`} src={images.lit} />
+      <img className={`memory-ring__title ${ringContext && 'disabled'}`} src={images.title} />
       <img
         className='memory-ring__shine'
         src={images.shine}

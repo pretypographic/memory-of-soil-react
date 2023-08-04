@@ -59,8 +59,8 @@ function Visual({ frameSource, getCloser }) {
               className='visual__block'
               key={index}
               index={index}
-              onMouseEnter={handleMouseTouch}
-              onMouseLeave={handleMouseOff}
+              onMouseOver={handleMouseTouch}
+              onMouseOut={handleMouseOff}
               onMouseDown={(event) => {
                 handlePressingVideo(event, video);
               }}>
@@ -73,8 +73,8 @@ function Visual({ frameSource, getCloser }) {
               className='visual__block'
               key={index}
               index={index}
-              onMouseEnter={handleMouseTouch}
-              onMouseLeave={handleMouseOff}
+              onMouseOver={handleMouseTouch}
+              onMouseOut={handleMouseOff}
               onMouseDown={handlePressingImage}>
               <div className='visual__image' style={image} />
             </div>

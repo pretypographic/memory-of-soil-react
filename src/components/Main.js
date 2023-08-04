@@ -6,11 +6,11 @@ import { MemoryRing } from './MemoryRing';
 import { MemoryWave } from './MemoryWave';
 import { About } from './About';
 import { images } from '../utils/images';
-import { Plug } from './Plug';
 
-function Main({ generateAnimationStyles, clearAnimationStyles }) {
+function Main({ generateAnimationStyles, clearAnimationStyles, handleBlackout }) {
   const { ringContext, setRingContext } = useContext(RingContext);
   const [wawesStyle, setWawesStyle] = useState(Array.from({ length: 15 }, () => ({})));
+  const [about, setAbout] = useState(false);
 
   const ringsStyle = {
     memory: {
@@ -68,7 +68,7 @@ function Main({ generateAnimationStyles, clearAnimationStyles }) {
   function blastMemory() {
     let step = 0;
     const updatedWawesStyle = wawesStyle.map((wave) => {
-      const updatedAnimation = generateAnimationStyles(1, 0.1, step, 1, 'backwards');
+      const updatedAnimation = generateAnimationStyles(1, 0.1, step, 1, 'forwards');
       step += 0.05;
       return { ...wave, ...updatedAnimation };
     });
@@ -82,7 +82,7 @@ function Main({ generateAnimationStyles, clearAnimationStyles }) {
         if (i === ri) {
           const updatedAnimation = generateAnimationStyles(2, 0, 0, 'infinite', 'forwards');
           return { ...wawe, ...updatedAnimation };
-        } else if (i > ri) {
+        } else if (i > 8) {
           const updatedAnimation = generateAnimationStyles(2, 0, step, 'infinite', 'forwards');
           step += 0.1;
           return { ...wawe, ...updatedAnimation };
@@ -96,42 +96,67 @@ function Main({ generateAnimationStyles, clearAnimationStyles }) {
   };
 
   function collapseMemory() {
-    console.log('collapseMemory');
     if (!ringContext) {
-      console.log(ringContext);
-      let step = 0;
-      const updatedWawesStyle = wawesStyle.map((wave) => {
-        const updatedAnimation = generateAnimationStyles(1, 0.1, step, 1, 'backwards');
-        step += 0.1;
-        return { ...wave, ...updatedAnimation };
+      const promise = new Promise((resolve) => {
+        setRingContext(true);
+        resolve();
       });
-      setWawesStyle(updatedWawesStyle);
-    };
-    setRingContext(true);
-    console.log(ringContext);
-  };
+
+      const performCollapse = async () => {
+        await promise;
+
+        let step = 1.4;
+        const updatedWawesStyle = wawesStyle.map((wave) => {
+          const updatedAnimation = generateAnimationStyles(1, 0.1, step, 1, 'forwards');
+          step -= 0.1;
+          return { ...wave, ...updatedAnimation };
+        });
+        setWawesStyle(updatedWawesStyle);
+      };
+
+      handleBlackout(true);
+      performCollapse();
+    }
+  }
 
   function handleMouseTouchesRing(event, name) {
-    if (event.currentTarget.getAttribute('data-name') === name) {
+    if (event.currentTarget.getAttribute('data-name') === name && !ringContext) {
       const index = parseInt(event.currentTarget.getAttribute('data-index'), 10);
       shineMemory(index);
     };
   };
 
   function handleSelfPossession() {
-    clearMemory();
+    if (!ringContext) {
+      clearMemory();
+    };
   };
 
+  function learnMoreAbout() {
+    setAbout(true);
+    handleBlackout(true);
+    setRingContext(true);
+  }
+
+  function closeAbout() {
+    setAbout(false);
+    handleBlackout(false);
+    setRingContext(false);
+  }
+
   useEffect(() => {
+    setTimeout(() => { setRingContext(false) }, 2500);
     blastMemory();
-    setTimeout(() => {setRingContext(false)}, 3000)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <div className='memory-rings' >
       <Language />
-      <Button />
+      <Button
+        about={about}
+        learnMoreAbout={learnMoreAbout}
+        closeAbout={closeAbout} />
       <MemoryRing
         link='/memory'
         name='memory'
@@ -223,8 +248,7 @@ function Main({ generateAnimationStyles, clearAnimationStyles }) {
         images={images.rings.time}
         ri={0} />
       <MemoryWave wawesStyle={wawesStyle} />
-      <About />
-      <Plug />
+      <About about={about} />
     </div>
   )
 };

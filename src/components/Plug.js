@@ -1,11 +1,7 @@
-import { useContext } from 'react';
-import { RingContext } from '../contexts/RingContext';
 
-function Plug() {
-  const { inContext } = useContext(RingContext);
-
+function Plug({ blackout }) {
   return (
-    <div className={`blackout ${inContext && 'blackout_seen'}`}></div>
+    <div className={`blackout ${blackout && 'blackout_seen'}`}></div>
   )
 };
 

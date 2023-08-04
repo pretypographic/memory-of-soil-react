@@ -1,11 +1,7 @@
-import { useContext } from 'react';
-import { RingContext } from '../contexts/RingContext';
-
-function About() {
-  const clickedRing = useContext(RingContext);
+function About({about}) {
 
   return (
-    <footer className={`about ${clickedRing && 'disabled'}`}>
+    <footer className={`about ${about ? 'about_seen' : 'disabled'}`}>
       <article className='about__walk'>
         <div className='about__column'>
           <h2 className='heading'>Мотивация</h2>
