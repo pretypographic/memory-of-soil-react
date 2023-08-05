@@ -1,15 +1,27 @@
 .footer__link {
-    margin: 0 0 0 0.4em;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: var(--font-family);
-    font-size: 3em;
-    letter-spacing: 0.4em;
-    color: #fff;
-    opacity: 0.3;
-    transition: opacity 0.4s;
+  margin: 0 0 0 0.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 3em;
+  letter-spacing: 0.4em;
+  color: #fff;
+  opacity: 0.5;
+  transition: opacity 0.4s;
 }
 
 .footer__link:hover {
-    opacity: 1;
+  opacity: 1;
+}
+
+@media (max-width: 360px) {
+  .footer__link {
+    flex-direction: column;
+    position: fixed;
+    top: 45vh;
+    left: -12vw;
+    transform: rotate(270deg);
+    font-size: 2.4em;
+    letter-spacing: 0.3em;
+  }
 }

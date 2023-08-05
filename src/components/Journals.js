@@ -47,16 +47,19 @@ function Journals({ frameSource, getCloser }) {
             <p className={`journal ${frameSource.texts.format}`}>{text}</p>
           </div>
         ))
-      } {
-        frameSource.audioArrey && frameSource.audioArrey.map((audio, index) => (
-          <div
-            className='journals__sound'
-            key={index}
-            index={index}>
-            <audio className="audio" src={audio} controls loop />
-          </div>
-        ))
       }
+      <div
+        className='journals__sound'> {
+          frameSource.audioArrey && frameSource.audioArrey.map((audio, index) => (
+            <audio
+              className="audio"
+              key={index}
+              src={audio}
+              controls
+              loop />
+          ))
+        }
+      </div>
     </section>
   )
 };

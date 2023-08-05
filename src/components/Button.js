@@ -18,7 +18,9 @@ function Button({ about, learnMoreAbout, closeAbout }) {
   return (
     <button
       className='memory-source'
-      onMouseDown={handleMouseDawn}>{text}</button>
+      onMouseDown={handleMouseDawn}
+      type="button"
+      aria-label={text}>{text}</button>
   )
 }
 

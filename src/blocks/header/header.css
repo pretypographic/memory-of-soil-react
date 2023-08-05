@@ -1,7 +1,13 @@
 .header {
-    height: calc(100vh / 6);
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
+  height: calc(100vh / 6);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+}
+
+@media (max-width: 360px) {
+  .header {
+    height: 8vh;
+  }
 }
