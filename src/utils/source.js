@@ -77,6 +77,10 @@ import стрекот_цикад_5 from "../media/audio/frame-time/6.стрек�
 
 const source = {
   memory: {
+    title: {
+      rus: 'память',
+      eng: 'memory',
+    },
     images: [
       { backgroundImage: `URL(${IMG_2098})` },
       { backgroundImage: `URL(${IMG_2232})` },
@@ -111,6 +115,10 @@ const source = {
     ]
   },
   illusion: {
+    title: {
+      rus: 'иллюзия',
+      eng: 'illusion',
+    },
     images: [
       { backgroundImage: `URL(${IMG_2082})` },
       { backgroundImage: `URL(${IMG_2087})` },
@@ -144,6 +152,10 @@ const source = {
     ]
   },
   revelations: {
+    title: {
+      rus: 'откровения',
+      eng: 'revelations',
+    },
     images: [
       { backgroundImage: `URL(${IMG_2221})` },
       { backgroundImage: `URL(${IMG_2225})` },
@@ -171,6 +183,10 @@ const source = {
     ]
   },
   monument: {
+    title: {
+      rus: 'монумент',
+      eng: 'monument',
+    },
     images: [
       { backgroundImage: `URL(${IMG_2089})` },
       { backgroundImage: `URL(${IMG_2106})` },
@@ -199,6 +215,10 @@ const source = {
     ]
   },
   war: {
+    title: {
+      rus: 'война',
+      eng: 'war',
+    },
     images: [
       { backgroundImage: `URL(${IMG_2108})` },
       { backgroundImage: `URL(${IMG_2127})` },
@@ -221,6 +241,10 @@ const source = {
     ]
   },
   person: {
+    title: {
+      rus: 'человек',
+      eng: 'person',
+    },
     images: [
       { backgroundImage: `URL(${IMG_2115})` },
       { backgroundImage: `URL(${IMG_2123})` },
@@ -250,6 +274,10 @@ const source = {
     ]
   },
   conflict: {
+    title: {
+      rus: 'конфликт',
+      eng: 'conflict',
+    },
     images: [
       { backgroundImage: `URL(${IMG_2172})` },
       { backgroundImage: `URL(${IMG_2175})` },
@@ -284,6 +312,10 @@ const source = {
     ]
   },
   movement: {
+    title: {
+      rus: 'движение',
+      eng: 'movement',
+    },
     images: [],
     video: [
       {
@@ -322,6 +354,10 @@ const source = {
     ]
   },
   time: {
+    title: {
+      rus: 'время',
+      eng: 'time',
+    },
     images: [
       { backgroundImage: `URL(${IMG_6848})` },
     ],

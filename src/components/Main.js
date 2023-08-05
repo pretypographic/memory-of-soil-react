@@ -1,4 +1,5 @@
 import { useContext, useState, useEffect } from 'react';
+import { LanguageContext } from '../contexts/LanguageContext';
 import { RingContext } from '../contexts/RingContext';
 import { Language } from './Language';
 import { Button } from './Button';
@@ -8,9 +9,14 @@ import { About } from './About';
 import { images } from '../utils/images';
 
 function Main({ generateAnimationStyles, clearAnimationStyles, handleBlackout }) {
+  const { languageContext } = useContext(LanguageContext);
   const { ringContext, setRingContext } = useContext(RingContext);
   const [wawesStyle, setWawesStyle] = useState(Array.from({ length: 15 }, () => ({})));
-  const [about, setAbout] = useState(false);
+  const [languageConfig, setLanguageConfig] = useState({
+    about: 'о проекте',
+    rings: 'кольца',
+  });
+  const [isOpen, setIsOpen] = useState(false);
 
   const ringsStyle = {
     memory: {
@@ -133,13 +139,13 @@ function Main({ generateAnimationStyles, clearAnimationStyles, handleBlackout })
   };
 
   function learnMoreAbout() {
-    setAbout(true);
+    setIsOpen(true);
     handleBlackout(true);
     setRingContext(true);
   }
 
   function closeAbout() {
-    setAbout(false);
+    setIsOpen(false);
     handleBlackout(false);
     setRingContext(false);
   }
@@ -150,13 +156,31 @@ function Main({ generateAnimationStyles, clearAnimationStyles, handleBlackout })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    console.log(languageContext)
+    if (languageContext === 'rus') {
+      setLanguageConfig(prevConfig => ({
+        ...prevConfig,
+        about: 'о проекте',
+        rings: 'кольца',
+      }));
+    } else if (languageContext === 'eng') {
+      setLanguageConfig(prevConfig => ({
+        ...prevConfig,
+        about: 'about',
+        rings: 'rings',
+      }));
+    }
+  }, [languageContext]);
+
   return (
     <div className='memory-rings' >
       <Language />
       <Button
-        about={about}
+        isOpen={isOpen}
         learnMoreAbout={learnMoreAbout}
-        closeAbout={closeAbout} />
+        closeAbout={closeAbout}
+        languageConfig={languageConfig} />
       <MemoryRing
         link='/memory'
         name='memory'
@@ -248,7 +272,7 @@ function Main({ generateAnimationStyles, clearAnimationStyles, handleBlackout })
         images={images.rings.time}
         ri={0} />
       <MemoryWave wawesStyle={wawesStyle} />
-      <About about={about} />
+      <About isOpen={isOpen} />
     </div>
   )
 };

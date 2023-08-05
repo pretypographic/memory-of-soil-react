@@ -1,7 +1,7 @@
-function About({about}) {
+function About({isOpen}) {
 
   return (
-    <footer className={`about ${about ? 'about_seen' : 'disabled'}`}>
+    <footer className={`about ${isOpen ? 'about_seen' : 'disabled'}`}>
       <article className='about__walk'>
         <div className='about__column'>
           <h2 className='heading'>Мотивация</h2>

@@ -1,11 +1,14 @@
 .language__option {
   margin: 0 0 0 1vh;
+  border: none;
+  background: none;
   font-size: 3vh;
   font-family: var(--font-family);
   color: #FFFFFF;
   text-decoration-line: none;
   text-transform: uppercase;
   transition: opacity 0.4s;
+  cursor: pointer;
 }
 
 .language__option:hover {

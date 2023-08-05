@@ -1,19 +1,34 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { RingContext } from '../contexts/RingContext';
 
-function Button({ about, learnMoreAbout, closeAbout }) {
+function Button({ isOpen, learnMoreAbout, closeAbout, languageConfig }) {
   const { ringContext } = useContext(RingContext);
-  const [text, setText] = useState('о проекте')
+  const [text, setText] = useState(languageConfig.about);
 
   function handleMouseDawn() {
-    if (!about && !ringContext) {
-      setText('кольца');
+    if (!isOpen && !ringContext) {
+      setText(languageConfig.rings);
       learnMoreAbout();
-    } else if (about && ringContext) {
-      setText('о проекте');
+    } else if (isOpen && ringContext) {
+      setText(languageConfig.about);
       closeAbout();
     }
   }
+
+  useEffect(() => {
+    console.log(text);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text]);
+
+  useEffect(() => {
+    console.log('useEffect.Button', !isOpen && !ringContext, isOpen && ringContext);
+    if (!isOpen || !ringContext) {
+      setText(languageConfig.about);
+    } else if (isOpen && ringContext) {
+      setText(languageConfig.rings);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [languageConfig]);
 
   return (
     <button
