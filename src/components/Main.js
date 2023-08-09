@@ -157,7 +157,6 @@ function Main({ generateAnimationStyles, clearAnimationStyles, handleBlackout })
   }, []);
 
   useEffect(() => {
-    console.log(languageContext)
     if (languageContext === 'rus') {
       setLanguageConfig(prevConfig => ({
         ...prevConfig,

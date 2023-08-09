@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useContext } from 'react';
+import { LanguageContext } from '../contexts/LanguageContext';
 import { RingContext } from '../contexts/RingContext';
 import { useNavigate } from 'react-router-dom';
 
 function MemoryRing({ link, name, style, wawesStyle, handlePressRing, handleMouseTouchesRing, handleSelfPossession, images, ri }) {
+  const { languageContext } = useContext(LanguageContext);
   const { ringContext } = useContext(RingContext);
   const navigate = useNavigate();
 
@@ -38,7 +40,15 @@ function MemoryRing({ link, name, style, wawesStyle, handlePressRing, handleMous
       onMouseOver={handleMouseTouch}
       onMouseOut={handleMouseOff}>
       <img className={`memory-ring__lit ${ringContext && 'disabled'}`} src={images.lit} />
-      <img className={`memory-ring__title ${ringContext && 'disabled'}`} src={images.title} />
+      {
+        languageContext === 'rus'
+          ? <img className={`memory-ring__title ${ringContext && 'disabled'}`} src={images.title.rus} />
+          : <></>
+      }      {
+        languageContext === 'eng'
+          ? <img className={`memory-ring__title ${ringContext && 'disabled'}`} src={images.title.eng} />
+          : <></>
+      }
       <img
         className='memory-ring__shine'
         src={images.shine}
