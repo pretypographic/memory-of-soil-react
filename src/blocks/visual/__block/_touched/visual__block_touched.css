@@ -1,3 +1,7 @@
 .visual__block_touched {
   flex-shrink: 9;
 }
+
+.visual__block_touched .visual__image {
+  filter: grayscale(0%);
+}

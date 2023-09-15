@@ -2,3 +2,10 @@
     display: flex;
     justify-items: center;
 }
+
+@media (max-width: 450px) {
+    .about__walk {
+        flex-direction: column;
+        align-items: center;
+    }
+}

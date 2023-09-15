@@ -5,7 +5,7 @@
   flex-direction: row;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .visual {
     flex-direction: column;
   }

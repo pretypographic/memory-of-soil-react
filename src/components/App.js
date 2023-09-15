@@ -11,7 +11,7 @@ import { source } from '../utils/source';
 
 function App() {
   const [ringContext, setRingContext] = useState(true);
-  const [languageContext, setLanguageContext] = useState('rus');
+  const [languageContext, setLanguageContext] = useState('eng');
   const [blackout, setBlackout] = useState(false);
 
   function generateAnimationStyles(t, delay, step, iterations, key) {

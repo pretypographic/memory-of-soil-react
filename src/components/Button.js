@@ -16,12 +16,6 @@ function Button({ isOpen, learnMoreAbout, closeAbout, languageConfig }) {
   }
 
   useEffect(() => {
-    console.log(text);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [text]);
-
-  useEffect(() => {
-    console.log('useEffect.Button', !isOpen && !ringContext, isOpen && ringContext);
     if (!isOpen || !ringContext) {
       setText(languageConfig.about);
     } else if (isOpen && ringContext) {

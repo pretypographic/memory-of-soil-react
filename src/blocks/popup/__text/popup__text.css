@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .popup__text {
     width: 90%;
     height: auto;

@@ -7,3 +7,9 @@
     border: 1vh solid white;
     border-radius: 2px;
 }
+
+@media (max-width: 450px) {
+    .audio {
+        min-height: 40px;
+    }
+}

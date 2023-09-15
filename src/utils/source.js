@@ -497,11 +497,11 @@ const about = {
   eng: {
     column: {
       motivation: {
-        heading: 'Мотивация',
+        heading: 'Motivation',
         text: ['On the 24th of February 2022 a full invasion of the territory of Ukraine by the army of the Russian Federation started. This conflict has influenced our lives as we were born and raised in Russia. Mariam moved to Tbilisi already in 2014, when Russian troops annexed Crimea, Liza and Polina in spring of 2022. The war made us think more deeply of the nature of conflicts, historical memory and peacebuilding.']
       },
       methods: {
-        heading: 'Методы',
+        heading: 'Methods',
         text: [
           'With this project we wanted to challenge an anthropocentric approach to thinking and perception of conflict, war and memory of war. It is an attempt to look at these things from the perspective of nature.',
           'When starting the project we thought of a toponymy of various locations that are named after battles. One of the most famous historical events in Georgia is the Battle of Didgori between the Georgian army and the Seljuks. There is a monument dedicated to this battle on Didgori Hill in the Kvemo Kartli region of Georgia.',
@@ -510,7 +510,7 @@ const about = {
         ]
       },
       inspiration: {
-        heading: 'Вдохновение',
+        heading: 'Inspiration',
         text: [
           'There’s evidence that indigenous people of North America have been capturing history by making little drawings in the form of circles, it was called Winter Count.',
           'They recorded and selected the one event representing the previous year. The event became central to the Winter Count—drawn at the center of the piece. Additional pictures would follow in a spiral, starting with the main event and then continuing in chronological order, earliest to latest, as the circle grew outward.',
@@ -534,7 +534,7 @@ const about = {
         name: 'Mariam Pesvianidze',
       },
       {
-        contributions: 'вэб',
+        contributions: 'web',
         name: 'Alexander Pesvianidze',
       },
       {

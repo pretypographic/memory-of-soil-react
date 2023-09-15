@@ -6,7 +6,7 @@
   z-index: 2;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .header {
     height: 8vh;
   }

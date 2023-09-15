@@ -1,4 +1,11 @@
 .popup__video_type_a {
     width: 100vh;
-    height: 67vh;    
+    height: 67vh;
+}
+
+@media (max-width: 450px) {
+    .popup__video_type_a {
+        width: 120vw;
+        height: 80vw;
+    }
 }

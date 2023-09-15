@@ -2,3 +2,10 @@
     width: 100vw;
     height: 42vw;
 }
+
+@media (max-width: 450px) {
+    .popup__video_type_b {
+        width: 170vw;
+        height: 72vw;
+    }
+}

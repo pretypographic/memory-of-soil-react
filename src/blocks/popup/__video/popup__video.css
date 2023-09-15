@@ -4,3 +4,10 @@
     position: absolute;
     z-index: 10;
 }
+
+@media (max-width: 450px) {
+    .popup__video {
+        transform: rotate(-90deg);
+        align-self: center;
+    }
+}

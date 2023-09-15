@@ -10,7 +10,7 @@
   transition: opacity 0.4s;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .header__title {
     font-size: 3em;
     letter-spacing: 0.8em;

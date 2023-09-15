@@ -10,7 +10,7 @@
   transition: flex-shrink 0.4s;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .journals {
     display: flex;
     flex-direction: row;

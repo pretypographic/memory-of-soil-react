@@ -10,3 +10,13 @@
   opacity: 0;
   transition: opacity 0.5s;
 }
+
+@media (max-width: 450px) {
+  .about {
+    width: 100%;
+    height: 90vh;
+    margin-top: 10vh;
+    padding-top: 0;
+    overflow-y: scroll;
+  }
+}

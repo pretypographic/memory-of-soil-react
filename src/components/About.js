@@ -16,6 +16,7 @@ function About({ isOpen }) {
 
   return (
     <footer className={`about ${isOpen ? 'about_seen' : 'disabled'}`}>
+      <div className='about__plate' />
       <article className='about__walk'>
         <div className='about__column'>
           <h2 className='heading'>{translation.column.motivation.heading}</h2>
