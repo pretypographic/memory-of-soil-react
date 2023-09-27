@@ -189,7 +189,8 @@ const source = {
         Сквозь цветения буйство`,
       ],
       eng: [
-        `I am a coward. I love nature endlessly, I value it, and I constantly try to remind myself that I am a part of it. However, when I end up alone with nature, I become timid. As soon as darkness falls, I become afraid. I fear wild animals, I fear insects. In parallel with this, I have realized how powerful and independent nature is. How it is mobile and adaptable. Nature is not a forgotten victim but a forgotten participant. Nature is not a backdrop for human troubles but an environment, circumstances, and consequences. (Polina)`,
+        `I am a coward. I love nature endlessly, I value it, and I constantly try to remind myself that I am a part of it. However, when I find myself alone with nature, I become timid. 
+        As soon as darkness falls, I become afraid. I fear wild animals, I fear insects. In parallel with this, I have realized how powerful and independent nature is. How it is mobile and adaptable. Nature is not a forgotten victim but a forgotten participant. Nature is not a backdrop for human troubles but an environment, circumstances, and consequences. (Polina)`,
         `I cannot find chaos here. Perhaps we haven't delved deep enough, so everything seems too harmonious. (Liza)`,
         `The feeling of hunger is pleasant, while the feeling of thirst is awful and frightening. (Liza)`,
         `I feel like I haven't met someone. It seems that this sensation arises with every trip to the forest. (Liza)`,
@@ -257,7 +258,7 @@ const source = {
       eng: [
         'One of the most destructive and cruel human manifestations is war, and once again, nature finds itself in the background. Open spaces are used as "battlefields," forests and ravines as hiding places. While fire and cannons were once the most terrifying military weapons until the 20th century, in the past century humanity has significantly enriched its arsenal of mutual destruction with nuclear, hydrogen, and chemical weapons.',
         'Scattered around are bronze abstract and semi-abstract figures. They resemble bone fragments, vertebrae, and femurs. Unburied bones of warriors or horses forced to participate in human battles. There is something foreign in these figures, a different aesthetic, an incomprehensibility, an absurdity, much like the essence of war and conflict itself.',
-        'The silence was broken by one man who suggested raising a toast ‘to our country, Georgia, its culture, and its history’. Then the other proposed to drink ‘to Georgia, which had achieved many great victories and would continue to do so’. After that, we were subtly signaled that the ritual was over and we could leave.',
+        'The silence was broken by one man who suggested raising a toast ‘to our country, Georgia, its culture, and its history’. Then the other proposed to drink ‘to Georgia, which had achieved many great victories and would continue to do so.’ After that, we were subtly signaled that the ritual was over and we could leave.',
       ],
       format: 'journals_type_b'
     },
@@ -335,15 +336,16 @@ const source = {
       ],
       eng: [
         `Trees are not individual entities; they are a plurality. And they live by the notion of "we" rather than "I." Thus, conflicts cease to be "personal."`,
-        `It seems that harmony is built, in part, on minor conflicts. Perhaps coexistence is impossible without conflicts? Is it possible that progress will not occur without them? The struggle for sunlight, for food, for the best spot in the forest. However, these conflicts do not surpass the boundaries of real needs. And often, one, realizing their powerlessness, retreats without resistance. Conflicts are inevitable. They occur constantly, at a micro level, occasionally escalating to a macro level.`,
-        `The vine twines around the tree. The tree does not run away; it obeys. Even after dying, they continue to coexist. The tree dies "in the embrace" of the vine.`,
+        `It seems that harmony is built, in part, on minor conflicts. Perhaps coexistence is impossible without conflicts? Is it possible that progress will not occur without them? The struggle for sunlight, for food, for the best spot in the forest. However, these conflicts do not surpass the boundaries of real needs. And often one, realizing their powerlessness, retreats without resistance. Conflicts are inevitable. They occur constantly, at a micro level, occasionally escalating to a macro level.`,
+        `The vine twines around the tree. The tree does not flee; it obeys. Even after death, they continue to coexist. The tree dies "in the embrace" of the vine.`,
         `Conflict is natural. Is balance possible in conflict?
         Conflict is violence. Nature is impossible without violence.
         The strong kill the weak - a law formed by nature. But it was formulated by humans.
         Is freedom possible in nature, or is everything subject to strict laws? Perhaps conflict arises when deviating from this law?
         Are conflict and harmony opposite or can they coexist?
         Conflict always leaves a trace, a memory. What is the purpose of conflict?`,
-        `On the third day we played "Battleship". I believe that conflict is the foundation of existence. The struggle between light and darkness, as a concept and as a state of opposition in general. This world cannot exist in absolute tranquility. Even if everything is calm in terms of events, there will still be contrast/conflict in color, light, composition, or sound. That "strong element" will inevitably arise. By the way, I won in "Battleship." It should be mentioned though, I was the one who suggested playing it. (Mariam)`,
+        `On the third day we played "Battleship." 
+        I believe that conflict is the foundation of existence. The struggle between light and darkness, as a concept and as a state of opposition in general. This world cannot exist in absolute tranquility. Even if everything is calm in terms of events, there will still be contrast/conflict in color, light, composition, or sound. That "strong element" will inevitably arise. By the way, I won in "Battleship." It should be mentioned though, I was the one who suggested playing it. (Mariam)`,
       ],
       format: 'journals_type_a'
     },
@@ -386,9 +388,9 @@ const source = {
         `Вода в разных фазах реки падает с разным звуком и ритмом.`,
       ],
       eng: [
-        `Nature possesses an incredible balance, a vestibular system, mobility, and adaptability. It is relaxed and consists of numerous diverse elements.
-        It's like in a dance - if you're tense and standing rigid, you're very unstable. But if you have a soft body and dance not "against" but "with" the floor, chairs, people, walls, or earth, trees, water, the dance can be endless and stunningly beautiful.`,
-        `Misty morning. Dense fog descends upon the mountains from above. Only once did I catch a glimpse of the white circle of the sun through the clouds. Birds are busy with their affairs from early morning - some fly through the valley between hills, some glide in the sky, some run across the rocks like lizards, and some peck at the trees. (Polina)`,
+        `Nature possesses an incredible balance, a vestibular system, mobility, and adaptability. It is relaxed and consists of a multitude diverse elements.
+        It is like a dance - if you're tense and standing rigid, you're very unstable. But if you have a soft body and dance not "against" but "with" the floor, chairs, people, walls, or earth, trees, and water, the dance can be endless and stunningly beautiful.`,
+        `Misty morning. Dense fog descends upon the mountains from above. Only once did I catch a glimpse of the white circle of the sun through the clouds. Birds are busy with their early morning affairs  - some fly through the valley between hills, some glide in the sky, some run across the rocks like lizards, and some peck at the trees. (Polina)`,
         `For me, the most comprehensible and natural way to communicate/interact with nature is through movement: running, dancing, lying down, crawling, imitating, repeating lines, movements, the character. (Polina)`,
         `Water in different phases of a river falls with different sounds and rhythms.`,
       ],
@@ -429,8 +431,8 @@ const source = {
       eng: [
         'We need to move away from the linearity of events. For nature, the past, present, and future are unified.',
         '“Arboreal-time is cyclical, recurrent, perennial; the past and the future breathe within this moment, and the present does not necessarily flow in one direction; instead it draws circles within circles, like the rings you find when you cut us down. Arboreal-time is equivalent to story-time — and, like a story, a tree does not grow in perfectly straight lines, flawless curves or exact right angles, but bends and twists and bifurcates into fantastical shapes, throwing out branches of wonder and arcs of invention. They are incompatible, human-time and tree-time” (excerpt from the book ‘The Island of Missing Trees’ by Elif Shafak)',
-        `Petrified wood is fascinating. How many centuries does it span? Mineral mummification of the wood… The plant world was represented by a herbarium, with samples dating back to the late 19th century. The yellowed paper and faded flowers, almost devoid of pigment, made it difficult to recognize the specimens when comparing them to the photographs. It's interesting to think about how these dried flowers in a frame can help people explore biodiversity?`,
-        'Nature represents a wisely organized ecosystem in which everything adheres to a strictly defined logic. One of such laws is that everything that is born eventually dies, paying its final tribute to the Earth and launching a new cycle of life for other beings.. Anthropogenic impact has made its corrections to many previously established natural traditions, but the law of life and death remains relevant, just as it always has.',
+        `Petrified wood is fascinating. How many centuries does it span? Mineral mummification of the wood…The plant world was represented through a herbarium, including samples dating back to the late 19th century. The yellowed paper and faded flowers, almost devoid of pigment, made it difficult to recognize the specimens when comparing them to the photographs. It's interesting to think about how these dried flowers in a frame can help people explore biodiversity.`,
+        'Nature represents a wisely organized ecosystem in which everything adheres to a strictly defined logic. One such laws is that everything which is born eventually dies, paying its final tribute to the Earth and launching a new cycle of life for other beings.. Anthropogenic impact has made corrections to many previously established natural traditions, but the law of life and death remains relevant, just as it always has.',
       ],
       format: 'journals_type_a'
     },
@@ -445,15 +447,15 @@ const about = {
     column: {
       motivation: {
         heading: 'Мотивация',
-        text: ['24 февраля 2022 года армия Российской Федерации начала полномасштабную войну против Украины. Этот конфликт повлиял на нашу жизнь, ведь мы родились и выросли в России. Мариам переехала в Тбилиси ещё в 2014 году, когда российские войска аннексировали Крым, Лиза и Полина — весной 2022 года. Война заставила нас глубже исследовать природу конфликтов, историческую память и восстановление мира.']
+        text: ['24 февраля 2022 года армия Российской Федерации начала полномасштабную войну против Украины. Этот конфликт повлиял на нашу жизнь, ведь мы родились и выросли в России. Мариам переехала в Тбилиси ещё в 2014 году, когда российские войска аннексировали Крым. Лиза и Полина — весной 2022 года. Война сподвигла нас глубже исследовать природу конфликтов, историческую память и способы восстановления мира.']
       },
       methods: {
         heading: 'Методы',
         text: [
-          'Этот проект – это попытка уйти от антропоцентрического способа думать о конфликте, войне и памяти о ней. Мы хотим посмотреть на эти вопросы с точки зрения природы.',
-          'Когда мы начали работу над проектом, мы размышляли о топонимии разных мест, названных в честь сражений. В Грузии одним из самых значимых исторических событий считается Дидгорская битва между грузинской армией и сельджуками. Этому сражению посвящен памятник на холме Дидгори, в районе Квемо-Картли, Грузия.',
-          'В качестве метода мы совершили 3-х дневное путешествие, которое разделили на 2 части: сначала исследовали сам монумент и окрестности Дидгорского холма, затем отправились в поход в Национальный парк Алгети, который находится рядом.',
-          'Но неважно, о каком сражении или монументе говорить. Концепция остается.',
+          'Данный проект это попытка уйти от антропоцентрического способа размышления о конфликте, войне и памяти о ней. Мы хотим посмотреть на эти вопросы с точки зрения природы.',
+          'Мы начали работу над проектом с анализа топонимов разных мест, названных в честь сражений. В Грузии одним из самых значимых исторических событий считается Дидгорская битва между грузинской армией и сельджуками. Этому сражению посвящен памятник на холме Дидгори, в районе Квемо-Картли, Грузия.',
+          'Мы совершили 3-х дневное путешествие в те места и разделили его на 2 части: сначала исследовали сам монумент и окрестности Дидгорского холма, затем отправились в поход в Национальный парк Алгети, который находится поблизости.',
+          'В целом, не так важно, о каком сражении или монументе мы говорим. Концепция будет везде схожа.',
         ]
       },
       inspiration: {
@@ -481,7 +483,7 @@ const about = {
         name: 'Мариам Песвианидзе',
       },
       {
-        contributions: 'web',
+        contributions: 'web разработка',
         name: 'Александр Песвианидзе',
       },
       {
@@ -489,7 +491,7 @@ const about = {
         name: 'Илья Жаркин',
       },
       {
-        contributions: 'анимация',
+        contributions: 'VFX анимация',
         name: 'Эмиль Хафизов',
       },
     ]
@@ -498,24 +500,24 @@ const about = {
     column: {
       motivation: {
         heading: 'Motivation',
-        text: ['On the 24th of February 2022 a full invasion of the territory of Ukraine by the army of the Russian Federation started. This conflict has influenced our lives as we were born and raised in Russia. Mariam moved to Tbilisi already in 2014, when Russian troops annexed Crimea, Liza and Polina in spring of 2022. The war made us think more deeply of the nature of conflicts, historical memory and peacebuilding.']
+        text: ['On the 24th of February 2022, a full invasion of the territory of Ukraine by the army of the Russian Federation began. As we were born and raised in Russia, this conflict has influenced our lives. Mariam moved to Tbilisi in 2014, when Russian troops annexed Crimea, Liza and Polina in the spring of 2022. The war made us think more deeply about the nature of conflicts, historical memory, and peacebuilding.']
       },
       methods: {
         heading: 'Methods',
         text: [
-          'With this project we wanted to challenge an anthropocentric approach to thinking and perception of conflict, war and memory of war. It is an attempt to look at these things from the perspective of nature.',
-          'When starting the project we thought of a toponymy of various locations that are named after battles. One of the most famous historical events in Georgia is the Battle of Didgori between the Georgian army and the Seljuks. There is a monument dedicated to this battle on Didgori Hill in the Kvemo Kartli region of Georgia.',
-          'As a method, we embarked on a 3-day journey, divided into two parts: first, we explored the monument itself and the surrounding area of Didgori Hill, and then we went on a hiking trip to the Algeti National Park located nearby.',
-          'Though, it does not matter what battle or monument we take. The concept stays.',
+          'With this project we wanted to challenge the anthropocentric approach to thinking and perceiving conflict, war, and memories of war. It is an attempt to look at these from the perspective of nature.',
+          'When starting this project, we first thought of a toponymy of various locations that are named after battles. One of the most famous historical events in Georgia is the Battle of Didgori between the Georgian army and the Seljuks. There is a monument dedicated to this battle on Didgori Hill in the Kvemo Kartli region of Georgia.',
+          'Our method led us to embark on a 3-day journey divided into two parts: first, we explored the monument itself and the surrounding area of Didgori Hill, then we went on a hiking trip to the Algeti National Park located nearby.',
+          'Though, it does not matter what battle or monument we choose. The concept stays.',
         ]
       },
       inspiration: {
         heading: 'Inspiration',
         text: [
-          'There’s evidence that indigenous people of North America have been capturing history by making little drawings in the form of circles, it was called Winter Count.',
-          'They recorded and selected the one event representing the previous year. The event became central to the Winter Count—drawn at the center of the piece. Additional pictures would follow in a spiral, starting with the main event and then continuing in chronological order, earliest to latest, as the circle grew outward.',
-          'Though, you may choose your own path to explore the content of the project - from center to the outer edge, vice versa or in a random order.',
-          'There are 9 thematic blocks containing photo, video, audio and texts.',
+          'The indigenous peoples of North America captured history through small paintings in the form of spirals, it is called Winter Count.',
+          'They selected and recorded one event to represent the previous year. This event became central to the Winter Count—drawn at the center of the piece. Additional symbols would follow in a spiral, beginning with the main event and then continuing in chronological order, earliest to latest, as the spiral grew outward.',
+          'You may choose your own path to explore the content of the project - from center to the outer edge, vice versa, or in a random order.',
+          'There are 9 thematic blocks containing photo, video, audio, and texts.',
           'Enjoy your journey!',
         ]
       },
@@ -534,15 +536,15 @@ const about = {
         name: 'Mariam Pesvianidze',
       },
       {
-        contributions: 'web',
-        name: 'Alexander Pesvianidze',
+        contributions: 'web development',
+        name: 'Aleksandr Pesvianidze',
       },
       {
         contributions: 'design',
         name: 'Ilya Zharkin',
       },
       {
-        contributions: 'animation',
+        contributions: 'VFX animation',
         name: 'Emile Khafizov',
       },
     ]

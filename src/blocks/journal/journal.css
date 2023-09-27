@@ -7,12 +7,14 @@
     font-family: var(--font-family);
     color: aliceblue;
     animation: move-text 20s linear infinite alternate forwards;
+    white-space: pre-line;
 }
 
 @keyframes move-text {
     0% {
         transform: translate(0vh, 0);
     }
+
     100% {
         transform: translate(-5vh, 0);
     }
