@@ -62,13 +62,14 @@
 @import url(./blocks/popup/_condition/popup_condition_closed.css);
 @import url(./blocks/popup/__image/popup__image.css);
 @import url(./blocks/popup/__text/popup__text.css);
-/* попап */
 @import url(./blocks/popup/__video/popup__video.css);
 @import url(./blocks/popup/__video/_type/popup__video_type_a.css);
 @import url(./blocks/popup/__video/_type/popup__video_type_b.css);
 @import url(./blocks/popup/__video/_type/popup__video_type_c.css);
 @import url(./blocks/popup/__video/_disabled/popup__video_disabled.css);
+@import url(./blocks/popup/__close-button/popup__close-button.css);
 @import url(./blocks/audio/audio.css);
+/* попап */
 /* медиа */
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__link/footer__link.css);

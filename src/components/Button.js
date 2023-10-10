@@ -1,24 +1,24 @@
 import { useContext, useEffect, useState } from 'react';
 import { RingContext } from '../contexts/RingContext';
 
-function Button({ isOpen, learnMoreAbout, closeAbout, languageConfig }) {
+function Button({ aboutState, learnMoreAbout, closeAbout, languageConfig }) {
   const { ringContext } = useContext(RingContext);
   const [text, setText] = useState(languageConfig.about);
 
   function handleMouseDawn() {
-    if (!isOpen && !ringContext) {
+    if (!aboutState && !ringContext) {
       setText(languageConfig.rings);
       learnMoreAbout();
-    } else if (isOpen && ringContext) {
+    } else if (aboutState && ringContext) {
       setText(languageConfig.about);
       closeAbout();
     }
   }
 
   useEffect(() => {
-    if (!isOpen || !ringContext) {
+    if (!aboutState || !ringContext) {
       setText(languageConfig.about);
-    } else if (isOpen && ringContext) {
+    } else if (aboutState && ringContext) {
       setText(languageConfig.rings);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

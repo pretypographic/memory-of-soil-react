@@ -5,7 +5,6 @@ import { ObjectContext } from '../contexts/ObjectContext';
 function Journals({ frameSource, getCloser }) {
   const { languageContext } = useContext(LanguageContext);
   const { setIsFocused } = useContext(ObjectContext);
-  const [index, setIndex] = useState();
   const [text, setText] = useState(frameSource.texts.rus)
 
   function handleMouseTouch(event) {
@@ -17,7 +16,13 @@ function Journals({ frameSource, getCloser }) {
   };
 
   function handlePressingText(event) {
-    setIndex(event.currentTarget.getAttribute('index'));
+    let index = event.currentTarget.getAttribute('index');
+    getCloser({
+      image: false,
+      video: false,
+      format: false,
+      text: text[index],
+    });
     setIsFocused(true);
   };
 
@@ -29,16 +34,6 @@ function Journals({ frameSource, getCloser }) {
       }
     });
   }, []);
-
-  useEffect(() => {
-    getCloser({
-      image: false,
-      video: false,
-      format: false,
-      text: text[index],
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [text, index])
 
   useEffect(() => {
     if (languageContext === 'rus') {

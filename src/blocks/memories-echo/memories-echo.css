@@ -1,14 +1,14 @@
 .memories-echo {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    background-image: url(../../media/images/__background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 1vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    --font-family: "Century Gothic", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url(../../media/images/__background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --font-family: "Century Gothic", sans-serif;
 }

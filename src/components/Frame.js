@@ -2,11 +2,12 @@ import { useContext, useEffect, useState } from 'react';
 import { LanguageContext } from '../contexts/LanguageContext';
 import { useParams, Link } from 'react-router-dom';
 import { ObjectContext } from '../contexts/ObjectContext';
+import { Plug } from './Plug';
 import { Language } from './Language';
 import { Visual } from './Visual';
 import { Popup } from './Popup';
 
-function Frame({ source, handleBlackout }) {
+function Frame({ source, handleBlackout, blackout }) {
   const { languageContext } = useContext(LanguageContext);
   let { subject } = useParams();
   let frameSource = source[subject];
@@ -54,6 +55,8 @@ function Frame({ source, handleBlackout }) {
   return (
     <ObjectContext.Provider value={{ isFocused, setIsFocused }}>
       <div className="root">
+        <Plug
+          blackout={blackout} />
         {/* корень */}
         {
           focus.text &&

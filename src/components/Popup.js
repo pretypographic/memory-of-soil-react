@@ -17,8 +17,10 @@ function Popup({ focusedOn }) {
         ? 'popup_condition_opened'
         : 'popup_condition_closed'}`}
       onMouseDown={stepBack}>
+      <button className='popup__close-button' />
       {
-        focusedOn.video && <video controls className={`popup__video ${focusedOn.format}`}>
+        focusedOn.video &&
+        <video controls className={`popup__video ${focusedOn.format}`}>
           <source
             src={focusedOn.video}
             type='video/mp4'
@@ -29,9 +31,11 @@ function Popup({ focusedOn }) {
         focusedOn.image && <div
           className='popup__image'
           style={focusedOn.image} />
-      } {/* <!-- изображение --> */}
-      <p className='popup__text'>{focusedOn.text}</p>
-      {/* <!-- текст --> */}
+      } {/* <!-- изображение --> */} {
+        focusedOn.text &&
+        <p className='popup__text'>{focusedOn.text}</p>
+      } {/* <!-- текст --> */}
+
     </section>
     // {/* <!-- попап --> */ }
   );
