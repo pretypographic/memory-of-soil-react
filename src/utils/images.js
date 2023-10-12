@@ -92,7 +92,7 @@ const images = {
       },
       shine: shine5
     },
-    person: {
+    human: {
       lit: lit4,
       title: {
         rus: itleRus4,

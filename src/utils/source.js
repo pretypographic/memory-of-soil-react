@@ -189,7 +189,7 @@ const source = {
         Сквозь цветения буйство`,
       ],
       eng: [
-        `I am a coward. I love nature endlessly, I value it, and I constantly try to remind myself that I am a part of it. However, when I find myself alone with nature, I become timid. 
+        `I am a coward. I love nature endlessly, I value it, and I constantly try to remind myself that I am a part of it. However, when I find myself alone with nature, I become timid.
         As soon as darkness falls, I become afraid. I fear wild animals, I fear insects. In parallel with this, I have realized how powerful and independent nature is. How it is mobile and adaptable. Nature is not a forgotten victim but a forgotten participant. Nature is not a backdrop for human troubles but an environment, circumstances, and consequences. (Polina)`,
         `I cannot find chaos here. Perhaps we haven't delved deep enough, so everything seems too harmonious. (Liza)`,
         `The feeling of hunger is pleasant, while the feeling of thirst is awful and frightening. (Liza)`,
@@ -266,10 +266,10 @@ const source = {
       стрекот_цикад_3
     ]
   },
-  person: {
+  human: {
     title: {
       rus: 'человек',
-      eng: 'person',
+      eng: 'human',
     },
     images: [
       { backgroundImage: `URL(${IMG_2115})` },
@@ -296,7 +296,7 @@ const source = {
         `What is the purpose of animal taxidermy? The exhibit represents an object, a creature that exists in nature. However, this taxidermy does not accurately depict the real animal. Instead, these specimens show how people imagined animals half a century ago, like household objects dug up from the ground — ancient spoons and weapons. How interesting and accurate it would be to have camera trap footage in the museum.
         Plant identification. We have uprooted plants from their natural habitat and came to the museum to learn their true names. Sounds quite bloodthirsty.`,
         `The hike doesn't feel easy, and my body is constantly aching, but without sharp pain.`,
-        `During our journey, we didn't encounter any other people (what actually pleased us), but we came across traces of human presence: occasional litter, tire tracks, fire pits, a field sown with potatoes, and ancient stone structures. It was difficult to walk due to the heat and heavy backpacks, but the idea of reaching a waterfall attracted us.`,
+        `During our journey, we didn't encounter any other people (which actually pleased us), but we came across traces of human presence: occasional litter, tire tracks, fire pits, a field sown with potatoes, and ancient stone structures. It was difficult to walk due to the heat and heavy backpacks, but the idea of reaching a waterfall strengthened us.`,
       ],
       format: 'journals_type_c'
     },
@@ -344,7 +344,7 @@ const source = {
         Is freedom possible in nature, or is everything subject to strict laws? Perhaps conflict arises when deviating from this law?
         Are conflict and harmony opposite or can they coexist?
         Conflict always leaves a trace, a memory. What is the purpose of conflict?`,
-        `On the third day we played "Battleship." 
+        `On the third day we played "Battleship."
         I believe that conflict is the foundation of existence. The struggle between light and darkness, as a concept and as a state of opposition in general. This world cannot exist in absolute tranquility. Even if everything is calm in terms of events, there will still be contrast/conflict in color, light, composition, or sound. That "strong element" will inevitably arise. By the way, I won in "Battleship." It should be mentioned though, I was the one who suggested playing it. (Mariam)`,
       ],
       format: 'journals_type_a'

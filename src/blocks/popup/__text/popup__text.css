@@ -1,6 +1,7 @@
 .popup__text {
   width: 60%;
   height: auto;
+  margin: 0;
   font-family: var(--font-family);
   font-size: 2em;
   color: #fff;

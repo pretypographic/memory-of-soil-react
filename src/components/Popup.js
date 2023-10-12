@@ -1,15 +1,27 @@
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { ObjectContext } from '../contexts/ObjectContext';
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Popup({ focusedOn }) {
   const { isFocused, setIsFocused } = useContext(ObjectContext);
+  const [text, setText] = useState([]);
+
 
   function stepBack(event) {
     if (!event.target.classList.contains('popup__video')) {
       setIsFocused(false);
     };
   };
+
+  useEffect(() => {
+    if (focusedOn.text && focusedOn.text.includes('\n')) {
+      console.log(focusedOn.text);
+      const lines = focusedOn.text.split('\n');
+      console.log(lines);
+      return setText(lines);
+    }
+    setText([focusedOn.text])
+  }, [focusedOn]);
 
   return (
     <section
@@ -32,8 +44,9 @@ function Popup({ focusedOn }) {
           className='popup__image'
           style={focusedOn.image} />
       } {/* <!-- изображение --> */} {
-        focusedOn.text &&
-        <p className='popup__text'>{focusedOn.text}</p>
+        text.length > 0 && text.map((line, index) => (
+          <p key={index} className='popup__text'>{line}</p>
+        ))
       } {/* <!-- текст --> */}
 
     </section>

@@ -34,7 +34,7 @@ function Main({ generateAnimationStyles, clearAnimationStyles, handleBlackout })
       height: '63vh',
       top: '18vh'
     },
-    person: {
+    human: {
       width: '49vh',
       height: '49vh',
       top: '25vh'
@@ -187,14 +187,14 @@ function Main({ generateAnimationStyles, clearAnimationStyles, handleBlackout })
         images={images.rings.war}
         ri={4} />
       <MemoryRing
-        link='/person'
-        name='person'
-        style={ringsStyle.person}
+        link='/human'
+        name='human'
+        style={ringsStyle.human}
         wawesStyle={wawesStyle[3]}
         handlePressRing={collapseMemory}
         handleMouseTouchesRing={handleMouseTouchesRing}
         handleSelfPossession={handleSelfPossession}
-        images={images.rings.person}
+        images={images.rings.human}
         ri={3} />
       <MemoryRing
         link='/conflict'

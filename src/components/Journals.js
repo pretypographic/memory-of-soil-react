@@ -4,8 +4,9 @@ import { ObjectContext } from '../contexts/ObjectContext';
 
 function Journals({ frameSource, getCloser }) {
   const { languageContext } = useContext(LanguageContext);
-  const { setIsFocused } = useContext(ObjectContext);
-  const [text, setText] = useState(frameSource.texts.rus)
+  const { isFocused, setIsFocused } = useContext(ObjectContext);
+  const [index, setIndex] = useState(null);
+  const [text, setText] = useState(frameSource.texts.eng)
 
   function handleMouseTouch(event) {
     event.currentTarget.classList.add('jurnals_touched');
@@ -16,13 +17,7 @@ function Journals({ frameSource, getCloser }) {
   };
 
   function handlePressingText(event) {
-    let index = event.currentTarget.getAttribute('index');
-    getCloser({
-      image: false,
-      video: false,
-      format: false,
-      text: text[index],
-    });
+    setIndex(event.currentTarget.getAttribute('index'));
     setIsFocused(true);
   };
 
@@ -43,6 +38,22 @@ function Journals({ frameSource, getCloser }) {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [languageContext]);
+
+  useEffect(() => {
+    getCloser({
+      image: false,
+      video: false,
+      format: false,
+      text: text[index],
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text, index])
+
+  useEffect(() => {
+    if (isFocused === false) {
+      setIndex(null);
+    }
+  }, [isFocused])
 
   return (
     <section
