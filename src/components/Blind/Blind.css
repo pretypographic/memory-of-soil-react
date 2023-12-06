@@ -1,0 +1,88 @@
+.blind {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../../media/images/__backout.png) center / cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.blind_opened {
+  opacity: 0;
+}
+
+.blind__section {
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blind__group {
+  display: flex;
+  flex-direction: row;
+}
+
+.blind__button {
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.blind__button:hover {
+  opacity: 0.8;
+}
+
+.blind__link {
+  color: #000000;
+  border-radius: 10px;
+  padding: 0 10px;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: all 0.3s;
+}
+
+.blind__link:hover {
+  opacity: 0.8;
+}
+
+.blind__text {
+  color: #FFFFFF;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.blind__image {
+  height: 10vh;
+  width: 10vh;
+  background: url(../../vendor/phone_bie0m3c0sdoo.svg) center / cover no-repeat;
+  animation: rotate 2s ease-out 0s infinite forwards normal;
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}

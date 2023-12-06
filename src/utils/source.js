@@ -16,14 +16,14 @@ import IMG_6998 from '../media/images/frame-illusion/IMG_6998.JPG';
 import IMG_7023 from '../media/images/frame-illusion/IMG_7023.JPG';
 import flower_2 from '../media/videos/frame-illusion/flower 2.mp4';
 import poster_flower2 from '../media/videos/frame-illusion/poster_flower2.jpg';
-import ветер from "../media/audio/frame-illusion/12.ветер.mp3";
+// import ветер from "../media/audio/frame-illusion/12.ветер.mp3";
 import ZOOM0049_LR from "../media/audio/frame-illusion/ZOOM0049_LR.wav";
-import ZOOM0050_LR from "../media/audio/frame-illusion/ZOOM0050_LR.wav";
+// import ZOOM0050_LR from "../media/audio/frame-illusion/ZOOM0050_LR.wav";
 // illusion
 import IMG_2221 from '../media/images/frame-revelations/IMG_2221.JPG';
 import IMG_2225 from '../media/images/frame-revelations/IMG_2225.JPG';
 import IMG_6095 from '../media/images/frame-revelations/IMG_6095.JPG';
-import стрекот_цикад_1 from "../media/audio/frame-revelations/7.стрекот цикад.mp3";
+// import стрекот_цикад_1 from "../media/audio/frame-revelations/7.стрекот цикад.mp3";
 import птицы from "../media/audio/frame-revelations/19.птицы.mp3";
 // revelations
 import IMG_2089 from '../media/images/frame-monument/IMG_2089_animation.JPG';
@@ -31,12 +31,12 @@ import IMG_2106 from '../media/images/frame-monument/IMG_2106.JPG';
 import IMG_2126 from '../media/images/frame-monument/IMG_2126.JPG';
 import IMG_2144 from '../media/images/frame-monument/IMG_2144.JPG';
 import колокола from "../media/audio/frame-monument/1.колокола.mp3";
-import стрекот_цикад_2 from "../media/audio/frame-monument/13.стрекот цикад.mp3";
+// import стрекот_цикад_2 from "../media/audio/frame-monument/13.стрекот цикад.mp3";
 // monument
 import IMG_2108 from '../media/images/frame-war/IMG_2108.JPG';
 import IMG_2127 from '../media/images/frame-war/IMG_2127.JPG';
 import IMG_2130 from '../media/images/frame-war/IMG_2130.JPG';
-import стрекот_цикад_3 from "../media/audio/frame-war/9.стрекот цикад.mp3";
+// import стукПоМедиСтатуй from '../media/audio/frame-war/'
 // war
 import IMG_2115 from '../media/images/frame-person/IMG_2115.JPG';
 import IMG_2123 from '../media/images/frame-person/IMG_2123.JPG';
@@ -44,7 +44,8 @@ import IMG_2132 from '../media/images/frame-person/IMG_2132.JPG';
 import Polina_1 from '../media/videos/frame-person/Polina_1.mp4';
 import poster_Polina_1 from '../media/videos/frame-person/poster_Polina_1.jpg';
 import стук_по_меди_статуй from "../media/audio/frame-person/3.стук по меди статуй.mp3";
-import вода_и_птички from "../media/audio/frame-person/22.вода и птички.mp3";
+// import вода_и_птички from "../media/audio/frame-person/22.вода и птички.mp3";
+import шаги from "../media/audio/frame-person/8.шаги_человек.mp3";
 // person
 import IMG_2172 from '../media/images/frame-conflict/IMG_2172.jpg';
 import IMG_2175 from '../media/images/frame-conflict/IMG_2175.jpg';
@@ -53,7 +54,7 @@ import IMG_2180 from '../media/images/frame-conflict/IMG_2180.jpg';
 import fist_v2 from '../media/videos/frame-conflict/fist_v2.mp4';
 import poster_fist_v2 from '../media/videos/frame-conflict/poster_fist_v2.jpg';
 import стрекот_цикад_4 from '../media/audio/frame-conflict/5.стрекот цикад.mp3';
-import ветер_и_мухи from '../media/audio/frame-conflict/11.ветер и мухи.mp3';
+// import ветер_и_мухи from '../media/audio/frame-conflict/11.ветер и мухи.mp3';
 // conflict
 import dancing_stone from '../media/videos/frame-movement/dancing_stone.mp4';
 import poster_dancing_stone from '../media/videos/frame-movement/poster_dancing_stone.jpg';
@@ -64,8 +65,8 @@ import poster_MVI_5637 from '../media/videos/frame-movement/poster_MVI_5637.jpg'
 import Polina_2v2 from '../media/videos/frame-movement/Polina_2v2.mp4';
 import poster_Polina_2v2 from '../media/videos/frame-movement/poster_Polina_2v2.jpg';
 import журчание_воды from "../media/audio/frame-movement/16.журчание воды.mp3";
-import речка_бежит_1 from "../media/audio/frame-movement/23.речка бежит.mp3";
-import речка_бежит_2 from "../media/audio/frame-movement/25.речка бежит.mp3";
+// import речка_бежит_1 from "../media/audio/frame-movement/23.речка бежит.mp3";
+// import речка_бежит_2 from "../media/audio/frame-movement/25.речка бежит.mp3";
 // movement
 import IMG_6848 from '../media/images/frame-time/IMG_6848.JPG';
 import fog from '../media/videos/frame-time/fog.mp4';
@@ -92,7 +93,7 @@ const source = {
       {
         video: bloodstone_v2,
         image: { backgroundImage: `URL(${poster03_blood_stone_v2})` },
-        format: 'popup__video_type_a'
+        format: 'viewing__video_type_a'
       }
     ],
     texts: {
@@ -134,7 +135,7 @@ const source = {
       {
         video: flower_2,
         image: { backgroundImage: `URL(${poster_flower2})` },
-        format: 'popup__video_type_b'
+        format: 'viewing__video_type_b'
       }
     ],
     texts: {
@@ -160,9 +161,7 @@ const source = {
       format: 'journals_type_c'
     },
     audioArrey: [
-      ветер,
       ZOOM0049_LR,
-      ZOOM0050_LR,
     ]
   },
   revelations: {
@@ -203,7 +202,6 @@ const source = {
       format: 'journals_type_c'
     },
     audioArrey: [
-      стрекот_цикад_1,
       птицы,
     ]
   },
@@ -235,7 +233,6 @@ const source = {
     },
     audioArrey: [
       колокола,
-      стрекот_цикад_2,
     ]
   },
   war: {
@@ -263,7 +260,7 @@ const source = {
       format: 'journals_type_b'
     },
     audioArrey: [
-      стрекот_цикад_3
+      стук_по_меди_статуй,
     ]
   },
   human: {
@@ -280,7 +277,7 @@ const source = {
       {
         video: Polina_1,
         image: { backgroundImage: `URL(${poster_Polina_1})` },
-        format: 'popup__video_type_c'
+        format: 'viewing__video_type_c'
       }
     ],
     texts: {
@@ -301,8 +298,7 @@ const source = {
       format: 'journals_type_c'
     },
     audioArrey: [
-      стук_по_меди_статуй,
-      вода_и_птички,
+      шаги,
     ]
   },
   conflict: {
@@ -320,7 +316,7 @@ const source = {
       {
         video: fist_v2,
         image: { backgroundImage: `URL(${poster_fist_v2})` },
-        format: 'popup__video_type_a'
+        format: 'viewing__video_type_a'
       }
     ],
     texts: {
@@ -351,7 +347,6 @@ const source = {
     },
     audioArrey: [
       стрекот_цикад_4,
-      ветер_и_мухи,
     ]
   },
   movement: {
@@ -364,19 +359,19 @@ const source = {
       {
         video: dancing_stone,
         image: { backgroundImage: `URL(${poster_dancing_stone})` },
-        format: 'popup__video_type_a'
+        format: 'viewing__video_type_a'
       }, {
         video: DSCF0823_30sec,
         image: { backgroundImage: `URL(${poster_DSCF0823_30sec})` },
-        format: 'popup__video_type_a'
+        format: 'viewing__video_type_c'
       }, {
         video: MVI_5637,
         image: { backgroundImage: `URL(${poster_MVI_5637})` },
-        format: 'popup__video_type_c'
+        format: 'viewing__video_type_c'
       }, {
         video: Polina_2v2,
         image: { backgroundImage: `URL(${poster_Polina_2v2})` },
-        format: 'popup__video_type_c'
+        format: 'viewing__video_type_c'
       }
     ],
     texts: {
@@ -398,8 +393,6 @@ const source = {
     },
     audioArrey: [
       журчание_воды,
-      речка_бежит_1,
-      речка_бежит_2,
     ]
   },
   time: {
@@ -414,11 +407,11 @@ const source = {
       {
         video: fog,
         image: { backgroundImage: `URL(${poster_fog})` },
-        format: 'popup__video_type_b'
+        format: 'viewing__video_type_b'
       }, {
         video: timelapse,
         image: { backgroundImage: `URL(${poster_timelapse})` },
-        format: 'popup__video_type_c'
+        format: 'viewing__video_type_c'
       }
     ],
     texts: {
@@ -442,7 +435,7 @@ const source = {
   }
 };
 
-const about = {
+const instruction = {
   rus: {
     column: {
       motivation: {
@@ -483,7 +476,7 @@ const about = {
         name: 'Мариам Песвианидзе',
       },
       {
-        contributions: 'web разработка',
+        contributions: 'web',
         name: 'Александр Песвианидзе',
       },
       {
@@ -536,7 +529,7 @@ const about = {
         name: 'Mariam Pesvianidze',
       },
       {
-        contributions: 'web development',
+        contributions: 'web',
         name: 'Aleksandr Pesvianidze',
       },
       {
@@ -551,4 +544,4 @@ const about = {
   }
 }
 
-export { source, about };
+export { source, instruction };

@@ -1,0 +1,4 @@
+.instruction-header {
+  display: flex;
+  z-index: 4;
+}

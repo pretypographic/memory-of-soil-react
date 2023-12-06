@@ -1,8 +1,0 @@
-.language {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  top: 4vh;
-  left: 3vh;
-  z-index: 6;
-}

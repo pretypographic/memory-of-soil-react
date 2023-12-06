@@ -1,0 +1,60 @@
+.visual {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.visual__block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-shrink: 10;
+  transition: flex-shrink 0.4s;
+  overflow: hidden;
+}
+
+.visual__block_open {
+  flex-shrink: 0;
+  background-color: black;
+}
+
+.visual__block_touched {
+  flex-shrink: 9;
+}
+
+.visual__block_touched .visual__image {
+  filter: grayscale(0%);
+}
+
+.visual__image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  filter: grayscale(100%);
+  transition: filter 0.4s;
+}
+
+.visual__image_in-color {
+  filter: grayscale(0%);
+}
+
+.visual__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  filter: grayscale(100%);
+  transition: filter 0.4s;
+}
+
+@media (max-width: 450px) {
+  .visual {
+    flex-direction: column;
+  }
+}

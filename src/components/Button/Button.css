@@ -1,0 +1,20 @@
+.memory-source {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  display: flex;
+  position: fixed;
+  top: 4vh;
+  right: 3vh;
+  font-size: 3vh;
+  font-family: var(--font-family);
+  color: #FFFFFF;
+  text-transform: uppercase;
+  transition: opacity 0.4s;
+  cursor: pointer;
+}
+
+.memory-source:hover {
+  opacity: 0.8;
+}

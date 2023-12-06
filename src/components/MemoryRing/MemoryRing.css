@@ -1,0 +1,64 @@
+.memory-ring {
+  margin: auto;
+  position: absolute;
+  right: 0;
+  left: -4vh;
+}
+
+.memory-ring_pointer {
+  cursor: pointer;
+}
+
+.memory-ring__lit {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: -3;
+}
+
+.memory-ring__shine {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -2;
+}
+
+.memory-ring__title {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+}
+
+.memory-ring:hover .memory-ring__lit {
+  opacity: 1;
+}
+
+.memory-ring:hover .memory-ring__title {
+  opacity: 1;
+}
+
+@keyframes shine {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+}
+/* Ты используешься ? */

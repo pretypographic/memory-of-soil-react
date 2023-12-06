@@ -1,0 +1,77 @@
+.instruction {
+  width: 75%;
+  height: 100vh;
+  padding-top: 20vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.instruction_seen {
+  opacity: 1;
+  z-index: 3;
+}
+
+.instruction__column {
+  width: 33%;
+  border-left: 1px solid white;
+  padding: 0 6px 0 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.instruction__walk {
+  display: flex;
+  justify-items: center;
+}
+
+.instruction__names {
+  padding-bottom: 10vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  align-items: end;
+  justify-items: center;
+}
+
+.instruction__name {
+  align-self: start;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.heading {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media (max-width: 450px) {
+  .instruction {
+    width: 100%;
+    height: 90vh;
+    margin-top: 10vh;
+    padding-top: 0;
+    overflow-y: scroll;
+  }
+  .instruction__column {
+      width: 90%;
+  }
+  .instruction__walk {
+    flex-direction: column;
+    align-items: center;
+  }
+  .instruction__names {
+    padding: 5vh 15vw 5vh 5vw;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+  }
+}

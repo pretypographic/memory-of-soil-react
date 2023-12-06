@@ -1,0 +1,10 @@
+.memory-rings {
+  width: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  z-index: 3;
+}

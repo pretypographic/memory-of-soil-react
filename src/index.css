@@ -1,78 +1,26 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
-@import url(./blocks/heading/heading.css);
-@import url(./blocks/text/text.css);
-/* основание */
-@import url(./blocks/language/language.css);
-@import url(./blocks/language/_disabled/language_disabled.css);
-@import url(./blocks/language/__option/language__option.css);
-@import url(./blocks/language/__option/_active/language__option_active.css);
-/* опции языка */
-@import url(./blocks/memories-echo/memories-echo.css);
-@import url(./blocks/memory-rings/memory-rings.css);
-@import url(./blocks/memory-ring/memory-ring.css);
-@import url(./blocks/memory-ring/_pointer/memory-ring_pointer.css);
-@import url(./blocks/memory-ring/__lit/memory-ring__lit.css);
-@import url(./blocks/memory-ring/__title/memory-ring__title.css);
-@import url(./blocks/memory-ring/__shine/memory-ring__shine.css);
-@import url(./blocks/memory-wave/memory-wave.css);
-@import url(./blocks/memory-wave/memory-wave__shine/memory-wave__shine.css);
-@import url(./blocks/memory-source/memory-source.css);
-/* эхо памяти */
-@import url(./blocks/blackout/blackout.css);
-@import url(./blocks/blackout/_seen/blackout_seen.css);
-/* блэкаут */
-@import url(./blocks/about/about.css);
-@import url(./blocks/about/_seen/about_seen.css);
-@import url(./blocks/about/__walk/about__walk.css);
-@import url(./blocks/about/__column/about__column.css);
-@import url(./blocks/about/__names/about__names.css);
-@import url(./blocks/about/__name/about__name.css);
-/* о проекте */
+@import url(./components/App/App.css);
+@import url(./components/Sound/Sound.css);
 
-/* --- */
+@import url(./components/InstructionHeader/InstructionHeader.css);
+@import url(./components/NavigationHeader/NavigationHeader.css);
+@import url(./components/Language/Language.css);
+@import url(./components/Button/Button.css);
 
-@import url(./blocks/root/root.css);
-/* корень */
-@import url(./blocks/header/header.css);
-@import url(./blocks/header/header__title/header__title.css);
-@import url(./blocks/header/header__title/_disappeared/header__title_disappeared.css);
-/* контртитул */
-@import url(./blocks/main/main.css);
-/* разворот */
-@import url(./blocks/visual/visual.css);
-@import url(./blocks/visual/__block/visual__block.css);
-@import url(./blocks/visual/__block/_touched/visual__block_touched.css);
-@import url(./blocks/visual/__block/_open/visual__block_open.css);
-@import url(./blocks/visual/__image/visual__image.css);
-@import url(./blocks/visual/__image/_in-color/visual__image__in-color.css);
-@import url(./blocks/visual/__video/visual__video.css);
-/* визуальная часть */
-@import url(./blocks/journals/journals.css);
-@import url(./blocks/journals/_touched/jurnals_touched.css);
-@import url(./blocks/journals/_type/journals_type_a.css);
-@import url(./blocks/journals/_type/journals_type_b.css);
-@import url(./blocks/journals/_type/journals_type_c.css);
-@import url(./blocks/journals/__block/journals__block.css);
-@import url(./blocks/journals/__sound/journals__sound.css);
-@import url(./blocks/journal/journal.css);
-/* журналы */
-@import url(./blocks/popup/popup.css);
-@import url(./blocks/popup/_condition/popup_condition_opened.css);
-@import url(./blocks/popup/_condition/popup_condition_closed.css);
-@import url(./blocks/popup/__image/popup__image.css);
-@import url(./blocks/popup/__text/popup__text.css);
-@import url(./blocks/popup/__video/popup__video.css);
-@import url(./blocks/popup/__video/_type/popup__video_type_a.css);
-@import url(./blocks/popup/__video/_type/popup__video_type_b.css);
-@import url(./blocks/popup/__video/_type/popup__video_type_c.css);
-@import url(./blocks/popup/__video/_disabled/popup__video_disabled.css);
-@import url(./blocks/popup/__close-button/popup__close-button.css);
-@import url(./blocks/audio/audio.css);
-/* попап */
-/* медиа */
-@import url(./blocks/footer/footer.css);
-@import url(./blocks/footer/__link/footer__link.css);
-@import url(./blocks/footer/__link/_disappeared/footer__link_disappeared.css);
-/* нижний колонтитул */
-@import url(./blocks/disabled/disabled.css);
+@import url(./components/Blind/Blind.css);
+
+@import url(./components/MemoriesEcho/MemoriesEcho.css);
+@import url(./components/Pensieve/Pensieve.css);
+@import url(./components/MemoryRing/MemoryRing.css);
+@import url(./components/MemoryWave/MemoryWave.css);
+
+@import url(./components/Frame/Frame.css);
+@import url(./components/Visual/Visual.css);
+@import url(./components/Journals/Journals.css);
+
+@import url(./components/Viewing/Viewing.css);
+
+@import url(./components/Instruction/Instruction.css);
+
+@import url(./components/Plug/Plug.css);
