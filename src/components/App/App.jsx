@@ -20,10 +20,7 @@ function App() {
 
   function handleStartClick() {
     setBlindOpen(true);
-    // window.scrollTo(0, 0);
-    setTimeout(() => {
-      navigate("/main", { replace: true });
-    }, 300);
+    navigate("/main", { replace: true });
   }
 
   function switchInstructionIsOpen(state) {
