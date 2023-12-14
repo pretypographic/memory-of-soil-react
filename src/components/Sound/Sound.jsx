@@ -3,7 +3,6 @@ function Sound({ audio }) {
     <audio
       className="sound"
       src={audio}
-      controls
       loop />
   )
 };

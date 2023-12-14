@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { useContext } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { LanguageContext } from '../../contexts/LanguageContext';
@@ -9,26 +9,35 @@ function MemoryRing({ link, name, style, wawesStyle, handlePressRing, handleMous
   const { languageContext } = useContext(LanguageContext);
   const { ringContext } = useContext(RingContext);
   const navigate = useNavigate();
+  const timeoutRef = useRef();
 
   function handlePressing(event) {
     event.stopPropagation();
     handlePressRing();
     if (!ringContext) {
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         navigate(link, { replace: true });
       }, 3000);
     };
-  };
+  }
 
   function handleMouseTouch(event) {
     event.stopPropagation();
     handleMouseTouchesRing(event, name);
-  };
+  }
 
   function handleMouseOff(event) {
     event.stopPropagation();
     handleSelfPossession();
-  };
+  }
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      };
+    }
+  }, [])
 
   return (
     <div

@@ -7,6 +7,7 @@ import { MemoriesEcho } from '../MemoriesEcho/MemoriesEcho';
 import { Blind } from '../Blind/Blind';
 import { MemoryRings } from "../MemoryRings/MemoryRings";
 import { Frame } from '../Frame/Frame';
+import { Sound } from "../Sound/Sound";
 
 import { source } from '../../utils/source';
 
@@ -16,6 +17,7 @@ function App() {
   const [instructionIsOpen, setInstructionIsOpen] = useState(false);
   const [blindOpen, setBlindOpen] = useState(false);
   const [blackOut, setBlackOut] = useState(false);
+  const [audio, setAudio] = useState(source.memory.audioArrey[0]);
   const navigate = useNavigate();
 
   function handleStartClick() {
@@ -61,6 +63,7 @@ function App() {
     <LanguageContext.Provider value={{ languageContext, setLanguageContext }}>
       <RingContext.Provider value={{ ringContext, setRingContext }}>
         <div className="app">
+          <Sound audio={audio} />
           <Routes>
             <Route path='/' exact element={
               <MemoriesEcho

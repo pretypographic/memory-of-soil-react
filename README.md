@@ -1,17 +1,17 @@
-# Документация "Память Земли"
+# Documentation "Memory of Soil"
 
-## Описание
-Этот сайт является документацией художественного проекта "Память Земли". Он предлагает интерактивное путешествие по галерее фотографий и видео с комментариями, которые рассказывают историю за каждым творческим произведением. Сайт разработан на React и предлагает удобную навигацию благодаря встроенному роутингу.
+## Description
+This site serves as the documentation for the artistic project "Memory of Soil". It offers an interactive journey through a gallery of photographs and videos with comments that narrate the story behind work. The site is developed in React and offers convenient navigation thanks to built-in routing.
 
-## Важное замечание
-Проект не будет функционировать без папки `media`, которая содержит необходимые медиафайлы. Убедитесь, что она присутствует в директории `src` перед запуском проекта.
+## Important Note
+The project will not function without the `media` folder, which contains the necessary media files. Ensure that it is present in the `src` directory before launching the project.
 
-## Как запустить
-- Клонируйте репозиторий.
-- Установите зависимости: `npm install` или `yarn install`.
-- Запустите проект: `npm start` или `yarn start`.
+## How to Launch
+- Clone the repository.
+- Install dependencies: `npm install` or `yarn install`.
+- Start the project: `npm start` or `yarn start`.
 
-## Текущие задачи
-Мы активно работаем над следующими улучшениями:
-- Исправление известных ошибок для повышения стабильности работы сайта.
-- Усовершенствование пользовательского интерфейса для более комфортного взаимодействия с контентом.
+## Current Tasks
+We are actively working on the following improvements:
+- Fixing known bugs to enhance the stability of the site.
+- Improving the user interface for more comfortable interaction with the content.

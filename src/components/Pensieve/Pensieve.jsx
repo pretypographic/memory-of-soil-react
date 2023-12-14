@@ -77,10 +77,10 @@ function Pensieve({ generateAnimationStyles, clearAnimationStyles, executeBlackO
       let step = 0.1;
       const updatedWawesStyle = wawesStyle.map((wawe, i) => {
         if (i === ri) {
-          const updatedAnimation = generateAnimationStyles(2, 0, 0, 'infinite', 'forwards');
+          const updatedAnimation = generateAnimationStyles(2, 1, 0, 'infinite', 'forwards');
           return { ...wawe, ...updatedAnimation };
         } else if (i > 8) {
-          const updatedAnimation = generateAnimationStyles(2, 0, step, 'infinite', 'forwards');
+          const updatedAnimation = generateAnimationStyles(2, 1, step, 'infinite', 'forwards');
           step += 0.1;
           return { ...wawe, ...updatedAnimation };
         } else {
@@ -131,8 +131,15 @@ function Pensieve({ generateAnimationStyles, clearAnimationStyles, executeBlackO
   };
 
   useEffect(() => {
-    setTimeout(() => { setRingContext(false) }, 2500);
+    const timerId = setTimeout(() => {
+      setRingContext(false);
+    }, 2500);
+
     blastMemory();
+
+    return () => {
+      clearTimeout(timerId);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
